@@ -1,1 +1,9 @@
-https://www.ncbi.nlm.nih.gov/sra/?term=SRP029367
+Abstract:
+	The goal of this study is to use RNA-sequencing to profile the transcriptional changes in HT-29 cells with ING3 deficiency. Specifically, we were interested in determining the IFN and ISGs in response to ING3 KO. Several ISGs including IFI44L and IFITM1 were up-regulated in ING3 KO HT-29 cells, indicating that the broad resistance to virus infection in ING3 KO cells were mediated by heightened IFN and ISG responses. Overall design: mRNA profiles of WT and ING3 KO HT-29 cells were analyzed by bulk RNA-sequencing We used one sgRNA to knockout ING3 in HT-29 cells, then we subcloned the HT-29-ING3 KO cells. #1 and #2 mean different subclones of HT-29-ING3 KO cells.
+SRA: SRP304782
+BioProject: PRJNA699603
+GEO: GSE166219
+
+article name:
+  Inhibitor of growth protein 3 epigenetically silences endogenous retroviral elements and prevents innate immune activation 
+PMCID: PMC8682784  PMID: 34791430
