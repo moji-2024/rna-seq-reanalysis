@@ -7,3 +7,22 @@ GEO: GSE166219
 article name:
   Inhibitor of growth protein 3 epigenetically silences endogenous retroviral elements and prevents innate immune activation 
 PMCID: PMC8682784  PMID: 34791430
+
+BioProject	PRJNA699603
+Consent	public
+Assay Type	RNA-Seq
+AvgSpotLen	50
+cell_line	colonic epithelial cell line HT-29
+Center Name	GEO
+DATASTORE filetype	fastq, run.zq, sra
+DATASTORE provider	gs, ncbi, s3
+DATASTORE region	gs.us-east1, ncbi.public, s3.us-east-1
+Instrument	BGISEQ-500
+LibraryLayout	SINGLE
+LibrarySelection	cDNA
+LibrarySource	TRANSCRIPTOMIC
+Organism	Homo sapiens
+Platform	BGISEQ
+ReleaseDate	2021-08-06
+version	1
+SRA Study	SRP304782
