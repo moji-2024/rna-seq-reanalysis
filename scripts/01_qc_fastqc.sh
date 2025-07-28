@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define input and output directories
-INPUT_DIR="data/raw"
+INPUT_DIR="data/raw/FastqFiles"
 OUTPUT_DIR="data/processed/fastqc_results"
 
 # Create output directory if it doesn't exist
