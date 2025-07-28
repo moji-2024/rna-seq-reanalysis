@@ -205,3 +205,37 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# ========================
+# Bioinformatics extensions
+# ========================
+
+# Raw and processed sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.bam
+*.sam
+*.vcf
+*.gtf
+*.gff
+*.bw
+
+# Data folders
+data/
+data/raw/
+data/processed/
+
+# Result and analysis outputs
+results/
+plots/
+figures/
+*.pdf
+*.svg
+*.png
+
+# Workflow engine artifacts (Snakemake / Nextflow)
+.snakemake/
+.snakejob/
+.nextflow/
+work/
+.cache/
