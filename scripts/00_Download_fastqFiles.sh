@@ -14,7 +14,7 @@ echo "Processing $url..." ;
 file_name=$(basename "$url")
 # Extract SRR ID from filename
 BaseName=$(echo "$file_name" | grep -Eo "SRR[0-9]+")
-    if [ "$base_name" == "SRR13633855" ] || [ "$base_name" == "SRR13633856" ]; then
+    if [ "$BaseName" == "SRR13633855" ] || [ "$BaseName" == "SRR13633856" ]; then
         mv "$FASTQ_DIR/$file_name" "$FASTQ_DIR/WT_$file_name"
     else
         mv "$FASTQ_DIR/$file_name" "$FASTQ_DIR/KO_$file_name"
