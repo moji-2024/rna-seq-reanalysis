@@ -1,4 +1,4 @@
-  GNU nano 4.8                                        01_qc_fastqc.sh                                         Modified  #!/bin/bash
+#!/bin/bash
 
 # Define input and output directories
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
