@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Initialize conda and activate environment
+source "$(conda info --base)/etc/profile.d/conda.sh"
+conda activate rnaseq-tools
+
 # Define input and output directories
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DATA_DIR="$SCRIPT_DIR/../data/"
