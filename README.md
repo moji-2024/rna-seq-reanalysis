@@ -36,13 +36,18 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 #Run below codes in your terminal:
 git clone https://github.com/moji-2024/rna-seq-reanalysis.git
 cd rna-seq-reanalysis/scripts
+
 #Run chmod +x scriptName on files inside the scripts/ folder to give them executable permission.
 for file in *; do chmod +x $file ; done
 
 
-Install required tools and libraries using:
+Install required tools and libraries: 
 
 ```bash
-conda env create -f environment.yml
+fastqc:
+sudo apt update
+sudo apt install fastqc
+fastqc --version
+
 
 
