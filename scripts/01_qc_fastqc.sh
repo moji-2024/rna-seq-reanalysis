@@ -1,11 +1,11 @@
-#!/bin/bash
+  GNU nano 4.8                                        01_qc_fastqc.sh                                         Modified  #!/bin/bash
 
 # Define input and output directories
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DATA_DIR="$SCRIPT_DIR/../data/raw/"
 
 INPUT_DIR="$DATA_DIR/FastqFiles"
-OUTPUT_DIR="$DATA_DIR/../processed/fastqc_results"
+OUTPUT_DIR="$SCRIPT_DIR/../results/plots/fastqc_results"
 
 # Create output directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
