@@ -28,7 +28,12 @@ for file in "$INPUT_DIR"/*.fastq.gz; do
     --unqualified_percent_limit 40 \
     --length_required 40 \
     --cut_mean_quality 20 \
+    --cut_front \
+    --cut_tail \
+    --cut_right \
     -h "$OUTPUT_HTML_REPORT_DIR/${base_name}.html" \
     -j "$OUTPUT_HTML_REPORT_DIR/${base_name}.json"
 done
 echo "All trimming completed."
+echo "Trimmed FASTQ files are in:     $OUTPUT_TRIMMED_DIR"
+echo "Fastp HTML/JSON reports are in: $OUTPUT_HTML_REPORT_DIR"
