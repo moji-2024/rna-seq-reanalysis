@@ -1,8 +1,11 @@
 #!/bin/bash
 
 # Define input and output directories
-INPUT_DIR="data/raw/FastqFiles"
-OUTPUT_DIR="data/processed/fastqc_results"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DATA_DIR="$SCRIPT_DIR/../data/raw/"
+
+INPUT_DIR="$DATA_DIR/FastqFiles"
+OUTPUT_DIR="$DATA_DIR/../processed/fastqc_results"
 
 # Create output directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
