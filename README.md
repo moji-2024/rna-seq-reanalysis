@@ -8,6 +8,7 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 - Compare outcomes between original and new pipelines
 
 ## Workflow
+0. Download fastq files
 1. Quality Control
 2. Read Trimming
 3. Alignment
@@ -17,7 +18,6 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 7. Visualization & Reporting
 
 ## Structure
-
 - `data/`: raw and processed input files (FASTQ, BAM, counts)
 - `scripts/`: stepwise scripts for QC, trimming, alignment, quantification, DE analysis
 - `results/`: output tables and plots
@@ -34,6 +34,9 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 - `matplotlib`, `seaborn`, `ggplot2`
 
 ## Getting Started
+git clone https://github.com/moji-2024/rna-seq-reanalysis.git
+
+use chmod +x scriptName for files in script directory to make them excuteable.
 
 Install required tools and libraries using:
 
