@@ -6,7 +6,7 @@ conda activate rnaseq-tools
 
 # Define input and output directories
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DATA_DIR="$SCRIPT_DIR/../data/"
+DATA_DIR="$SCRIPT_DIR/../data"
 
 INPUT_DIR="$DATA_DIR/raw/FastqFiles"
 OUTPUT_TRIMMED_DIR="$DATA_DIR/processed/trimmed"
