@@ -1,7 +1,7 @@
 General Summary of FastQC Results (All 6 Files)
 After reviewing multiple FastQC reports, we can make the following observations about the dataset as a whole:
 
-✅ Common Passes Across All Samples
+✔Common Passes Across All Samples
 Per base sequence quality: Most reads show high quality across the length of the sequences. This means the sequencer performed well overall.
 
 Per sequence quality scores: Quality distribution across reads is strong, with most reads having high average Phred scores.
@@ -10,12 +10,12 @@ Adapter content: Minimal or no adapter contamination was detected, meaning libra
 
 Sequence length distribution and N content are stable.
 
-⚠️ Consistent Warnings
+! Consistent Warnings
 Per sequence GC content: Most files showed slight deviations from a normal GC distribution. This could indicate some technical bias or contamination in the library or uneven amplification of GC-rich regions.
 
 Sequence duplication levels: A moderate level of duplicated reads appeared across several samples. This is expected in low-input RNA-seq or over-sequenced libraries but still something to watch.
 
-❌ Shared Failures
+✗ Shared Failures
 Per base sequence content: All or most samples failed this module. The beginning of the reads showed a strong imbalance in nucleotide composition, especially in the first 10–15 bases. This is typically caused by:
 
 Random hexamer priming (bias at the start of reads)
