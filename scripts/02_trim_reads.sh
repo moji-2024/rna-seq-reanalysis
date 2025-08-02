@@ -1,25 +1,30 @@
 #!/bin/bash
 
-# Input/output directories
-INPUT_DIR="data/raw/FastqFiles"
-OUTPUT_DIR="data/processed/trimmed"
-ADAPTERS="TruSeq3-SE.fa"  # Make sure this adapter file is available
+# Define input and output directories
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DATA_DIR="$SCRIPT_DIR/../data/"
 
-# Create output directory if not exists
-mkdir -p "$OUTPUT_DIR"
+INPUT_DIR="$DATA_DIR/raw/FastqFiles"
+OUTPUT_TRIMMED_DIR="$DATA_DIR/processed/trimmed"
+OUTPUT_HTML_REPORT_DIR="$DATA_DIR/processed/trimmed_report"
+
+# make output directories
+mkdir -p "$OUTPUT_TRIMMED_DIR"
+mkdir -p "$OUTPUT_HTML_REPORT_DIR"
+
 
 # Loop through single-end FASTQ files
 for file in "$INPUT_DIR"/*.fastq.gz; do
-    base=$(basename "$file" .fastq.gz)
-    echo "Trimming $base..."
-
-    trimmomatic SE -threads 4 \
-        "$file" \
-        "$OUTPUT_DIR/${base}.trimmed.fastq.gz" \
-        ILLUMINACLIP:"$ADAPTERS":2:30:10 \
-        LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
-
-    echo "$base trimming done."
+    base_name=$(basename "$file" .fastq.gz)
+    echo "Trimming $base_name..."
+    fastp \
+    -i "$file" \
+    -o "$OUTPUT_TRIMMED_DIR/trimmed_${base_name}.fastq.gz" \
+    --qualified_quality_phred 28 \
+    --unqualified_percent_limit 40 \
+    --length_required 40 \
+    --cut_mean_quality 20 \
+    -h "$OUTPUT_HTML_REPORT_DIR/${base_name}.html" \
+    -j "$OUTPUT_HTML_REPORT_DIR/${base_name}.json"
 done
-
 echo "All trimming completed."
