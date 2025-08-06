@@ -51,7 +51,7 @@ fastqc --version
 ```
 ### install fastp on conda:
 ```bash
-conda create -n rnaseq-tools fastp star qualimap -c bioconda -y
+conda create -n rnaseq-tools fastp star qualimap samtools -c bioconda -y
 ```
 
 
