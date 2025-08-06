@@ -48,7 +48,7 @@ for file in *; do chmod +x $file ; done
 sudo apt update
 sudo apt install fastqc
 fastqc --version
-
+```
 
 
 install fastp on conda:
