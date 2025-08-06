@@ -6,9 +6,7 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 - Update tools and annotations
 - Improve visualizations and downstream interpretation
 - Compare outcomes between original and new pipelines
-<p align="center">
-  <img src="images/step1_USAGE_GUIDE.png" alt="RNA-seq Workflow" width="600">
-</p>
+
 ## Workflow
 0. Download fastq files
 1. Quality Control
