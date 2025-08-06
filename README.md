@@ -42,12 +42,12 @@ for file in *; do chmod +x $file ; done
 
 
 Install required tools and libraries: 
-
+Install fastqc:
 ```bash
 fastqc:
 sudo apt update
 sudo apt install fastqc
 fastqc --version
-
+'''
 
 
