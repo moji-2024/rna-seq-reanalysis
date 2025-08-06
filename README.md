@@ -44,14 +44,14 @@ for file in *; do chmod +x $file ; done
 
 ####  Install **FastQC** (via apt):
 
-'''bash
+```bash
 sudo apt update
 sudo apt install fastqc
 fastqc --version
-'''
-
-
-install fastp on conda:
+```
+### install fastp on conda:
+```bash
 conda create -n rnaseq-tools fastp -c bioconda -y
+```
 
 
