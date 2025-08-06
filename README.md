@@ -40,6 +40,14 @@ cd rna-seq-reanalysis/scripts
 #Run chmod +x scriptName on files inside the scripts/ folder to give them executable permission.
 for file in *; do chmod +x $file ; done
 
+### 🔧 Install Required Tools and Libraries
+
+#### ✅ Install **FastQC** (via apt):
+
+```bash
+sudo apt update
+sudo apt install fastqc
+fastqc --version
 
 Install required tools and libraries: 
 
