@@ -45,13 +45,12 @@ Install required tools and libraries:
 
 Install fastqc:
 ```bash
-fastqc:
 sudo apt update
 sudo apt install fastqc
 fastqc --version
 
 install fastp on conda:
 ```bash
-fastqc:
+conda create -n rnaseq-tools fastp -c bioconda -y
 
 
