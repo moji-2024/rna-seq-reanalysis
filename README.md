@@ -52,7 +52,6 @@ fastqc --version
 
 
 install fastp on conda:
-```bash
 conda create -n rnaseq-tools fastp -c bioconda -y
 
 
