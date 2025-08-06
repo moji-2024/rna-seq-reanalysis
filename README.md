@@ -49,6 +49,9 @@ fastqc:
 sudo apt update
 sudo apt install fastqc
 fastqc --version
+
+install fastp on conda:
 ```bash
+fastqc:
 
 
