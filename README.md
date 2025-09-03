@@ -55,6 +55,13 @@ cd FastQC
 chmod +x fastqc
 sudo cp fastqc /usr/local/bin/
 ```
+####  Install **FastQC**:
+```bash
+wget https://cloud.biohpc.swmed.edu/index.php/s/hisat2-220/download -O hisat2-2.2.1-Linux_x86_64.zip
+unzip hisat2-2.2.1-Linux_x86_64.zip
+cd hisat2-2.2.1
+chmod +x hisat2*
+```
 ### install fastp on conda:
 ```bash
 wget https://github.com/conda-forge/miniforge/releases/download/24.11.3-2/Miniforge3-24.11.3-2-Linux-x86_64.sh
