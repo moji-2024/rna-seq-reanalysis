@@ -8,21 +8,22 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 - Compare outcomes between original and new pipelines
 
 ## Workflow
-0. Download fastq files
-1. Quality Control
-2. Trimming
-3. Alignment
-4. Gene Quantification
-5. Differential Expression
-6. Functional Enrichment
-7. Visualization & Reporting
+0. Download requirements
+1. Download fastq files
+2. Quality Control
+3. Trimming
+4. Alignment
+5. Gene Quantification
+6. Differential Expression
+7. Functional Enrichment
+8. Visualization & Reporting
 
 ## Structure
 - `data/`: raw and processed input files (FASTQ, BAM, counts)
 - `scripts/`: stepwise scripts for QC, trimming, alignment, quantification, DE analysis
 - `results/`: output tables and plots
-- `workflow/`: Snakemake pipeline file
-- `notebooks/`: optional exploration or reports
+- `workflow/`: pipeline file
+- `GenomeIndexes/`: hisat2 indexes
 
 ## Tools Used
 - `samtools version 1.10`
@@ -32,14 +33,6 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 - `featureCounts` / `HTSeq`
 - `DESeq2`
 - `matplotlib`, `seaborn`, `ggplot2`
-
-## Getting Started
-#Run below codes in your terminal:
-git clone https://github.com/moji-2024/rna-seq-reanalysis.git
-cd rna-seq-reanalysis/scripts
-
-#Run chmod +x scriptName on files inside the scripts/ folder to give them executable permission.
-for file in *; do chmod +x $file ; done
 
 ###  Install Required Tools and Libraries
 ```bash
@@ -82,5 +75,12 @@ bash Miniforge3-24.11.3-2-Linux-x86_64.sh
 
 conda create -n rnaseq-tools fastp=0.22.0 qualimap -c bioconda -y
 ```
-
+## Getting Started
+#Run below codes in your terminal:
+cd ~
+git clone https://github.com/moji-2024/rna-seq-reanalysis.git
+cd rna-seq-reanalysis/scripts
+#Run chmod +x scriptName on files inside the scripts/ folder to give them executable permission.
+for file in *; do chmod +x $file ; done
+Run scripts in order
 
