@@ -25,8 +25,9 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 - `notebooks/`: optional exploration or reports
 
 ## Tools Used
+- `samtools version 1.10`
 - `fastqc version v0.11.9`
-- `Trim Galore`
+- `fastp version 0.22.0`
 - `HISAT2 version 2.2.1 `
 - `featureCounts` / `HTSeq`
 - `DESeq2`
@@ -62,12 +63,24 @@ unzip hisat2-2.2.1-Linux_x86_64.zip
 cd hisat2-2.2.1
 chmod +x hisat2*
 ```
+####  Install **samtools**:
+```bash
+wget https://github.com/samtools/samtools/releases/download/1.10/samtools-1.10.tar.bz2
+tar -xvjf samtools-1.10.tar.bz2
+cd samtools-1.10
+./configure --prefix=/usr/local
+make
+sudo make install
+```
+
+
 ### install fastp on conda:
 ```bash
+cd ~
 wget https://github.com/conda-forge/miniforge/releases/download/24.11.3-2/Miniforge3-24.11.3-2-Linux-x86_64.sh
 bash Miniforge3-24.11.3-2-Linux-x86_64.sh
 
-conda create -n rnaseq-tools fastp star qualimap samtools -c bioconda -y
+conda create -n rnaseq-tools fastp=0.22.0 qualimap -c bioconda -y
 ```
 
 
