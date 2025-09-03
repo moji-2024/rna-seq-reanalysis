@@ -27,7 +27,7 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 ## Tools Used
 - `FastQC`
 - `Trim Galore`
-- `STAR`
+- `HISAT2 version 2.2.1 `
 - `featureCounts` / `HTSeq`
 - `DESeq2`
 - `matplotlib`, `seaborn`, `ggplot2`
