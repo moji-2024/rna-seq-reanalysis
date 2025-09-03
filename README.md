@@ -56,7 +56,7 @@ cd FastQC
 chmod +x fastqc
 sudo cp fastqc /usr/local/bin/
 ```
-####  Install **FastQC**:
+####  Install **hisat2**:
 ```bash
 wget https://cloud.biohpc.swmed.edu/index.php/s/hisat2-220/download -O hisat2-2.2.1-Linux_x86_64.zip
 unzip hisat2-2.2.1-Linux_x86_64.zip
