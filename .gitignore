@@ -221,9 +221,10 @@ __marimo__/
 *.bw
 
 # Data folders
-data/
+# keep ignoring raw
 data/raw/
-data/processed/
+# but allow processed
+!data/processed/**
 
 # Result and analysis outputs
 results/
