@@ -25,7 +25,7 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 - `notebooks/`: optional exploration or reports
 
 ## Tools Used
-- `FastQC`
+- `fastqc version v0.11.9`
 - `Trim Galore`
 - `HISAT2 version 2.2.1 `
 - `featureCounts` / `HTSeq`
@@ -41,16 +41,25 @@ cd rna-seq-reanalysis/scripts
 for file in *; do chmod +x $file ; done
 
 ###  Install Required Tools and Libraries
-
-####  Install **FastQC** (via apt):
-
+```bash
+mkdir -p Tools
+cd Tools
+```
+####  Install **FastQC**:
 ```bash
 sudo apt update
-sudo apt install fastqc
-fastqc --version
+sudo apt install openjdk-11-jre
+wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
+unzip fastqc_v0.11.9.zip
+cd FastQC
+chmod +x fastqc
+sudo cp fastqc /usr/local/bin/
 ```
 ### install fastp on conda:
 ```bash
+wget https://github.com/conda-forge/miniforge/releases/download/24.11.3-2/Miniforge3-24.11.3-2-Linux-x86_64.sh
+bash Miniforge3-24.11.3-2-Linux-x86_64.sh
+
 conda create -n rnaseq-tools fastp star qualimap samtools -c bioconda -y
 ```
 
