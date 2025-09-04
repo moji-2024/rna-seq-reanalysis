@@ -10,7 +10,7 @@ THREADS=8
 # path to HISAT2 index prefix
 IDX=$SCRIPT_DIR/../GenomeIndexes/grch38_tran/genome_tran
 # path to splice sites file
-SS="$DATA_DIR/raw/hints_for_spliced_alignment_DIR/splice_sites.txt"
+SS="$DATA_DIR/processed/raw/hints_for_spliced_alignment_DIR/splice_sites.txt"
 # folder with trimmed FASTQs
 FASTQ_DIR="$DATA_DIR/processed/trimmed"
 ALIGN_DIR="$DATA_DIR/processed/align"
@@ -28,7 +28,7 @@ for R1 in ${FASTQ_DIR}/*.fastq.gz; do
 
     # Align and create sorted BAM
     $PATH_hisat2/hisat2 -p $THREADS \
-	--add-chrname \
+        --add-chrname \
         --dta \
         --known-splicesite-infile $SS \
         -x $IDX \
@@ -49,4 +49,3 @@ for R1 in ${FASTQ_DIR}/*.fastq.gz; do
 done
 
 echo "All samples processed. BAMs in $ALIGN_DIR, logs in $LOG_DIR"
-
