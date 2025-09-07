@@ -10,6 +10,10 @@ Script: scripts/04_download_and_extract_Hisat2IndexFiles_and_put_them_in_GenomeI
 What happens: Quality-trimmed FASTQ files are aligned to the reference genome using HISAT2. The alignments are converted into sorted BAM files, and logs are saved for reproducibility and troubleshooting.
 Script: scripts/05_create_bamFile_by_hisat2_and_save_logs.sh
 
-4. Gene Quantification (Next Step)
+4. check function of hisat2
+What happens: After alignment, logs of hisat2 used for visualization to show its performance.
+Script: 06_hisat2_piechartCreater.py
+
+6. Gene Quantification (Next Step)
 
 What happens: After alignment, the next stage is quantifying gene expression. This involves counting reads mapped to each gene using the aligned BAM files and the reference annotation.
