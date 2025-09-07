@@ -232,7 +232,6 @@ plots/
 figures/
 *.pdf
 *.svg
-*.png
 
 # Workflow engine artifacts (Snakemake / Nextflow)
 .snakemake/
