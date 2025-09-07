@@ -226,12 +226,6 @@ data/raw/
 # but allow processed
 !data/processed/**
 
-# Result and analysis outputs
-results/
-plots/
-figures/
-*.pdf
-*.svg
 
 # Workflow engine artifacts (Snakemake / Nextflow)
 .snakemake/
