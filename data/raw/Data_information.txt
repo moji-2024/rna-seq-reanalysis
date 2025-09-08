@@ -21,6 +21,7 @@ Instrument	BGISEQ-500
 LibraryLayout	SINGLE
 LibrarySelection	cDNA
 LibrarySource	TRANSCRIPTOMIC
+LibrarySize	Medium
 Organism	Homo sapiens
 Platform	BGISEQ
 ReleaseDate	2021-08-06
