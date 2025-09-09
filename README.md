@@ -73,7 +73,7 @@ cd ~
 wget https://github.com/conda-forge/miniforge/releases/download/24.11.3-2/Miniforge3-24.11.3-2-Linux-x86_64.sh
 bash Miniforge3-24.11.3-2-Linux-x86_64.sh
 
-conda create -n rnaseq-tools fastp=0.22.0 qualimap=2.2.2d rseqc=5.0.1 -c conda-forge -c bioconda -c defaults -y
+conda create -n rnaseq-tools fastp=0.22.0 qualimap=2.2.2a rseqc=5.0.1 -c conda-forge -c bioconda -c defaults -y
 ```
 ## Getting Started
 #Run below codes in your terminal:
