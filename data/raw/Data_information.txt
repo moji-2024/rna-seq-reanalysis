@@ -17,10 +17,11 @@ Center Name	GEO
 DATASTORE filetype	fastq, run.zq, sra
 DATASTORE provider	gs, ncbi, s3
 DATASTORE region	gs.us-east1, ncbi.public, s3.us-east-1
-Instrument	BGISEQ-500
+Instrument	BGISEQ-500 
 LibraryLayout	SINGLE
 LibrarySelection	cDNA
 LibrarySource	TRANSCRIPTOMIC
+LibrarySize	Medium (28.0 M)
 Organism	Homo sapiens
 Platform	BGISEQ
 ReleaseDate	2021-08-06
