@@ -1,0 +1,55 @@
+RNA-Seq QC report
+-----------------------------------
+
+>>>>>>> Input
+
+    bam file = /home/moji-lin/rna-seq-reanalysis/scripts/../data/processed/align/trimmed_KO_SRR13633857.sorted.bam
+    gff file = /home/moji-lin/rna-seq-reanalysis/scripts/../data/raw/GenomeFASTA_and_AnnotationGTF/edited_Homo_sapiens.GRCh38.84.gtf
+    counting algorithm = proportional
+    protocol = non-strand-specific
+
+
+>>>>>>> Reads alignment
+
+    reads aligned  = 26,842,097
+    total alignments = 32,404,111
+    secondary alignments = 5,562,014
+    non-unique alignments = 0
+    aligned to genes  = 27,531,755
+    ambiguous alignments = 1,640,669
+    no feature assigned = 3,227,219
+    not aligned = 452,098
+    SSP estimation (fwd/rev) = 0.51 / 0.49
+
+
+>>>>>>> Reads genomic origin
+
+    exonic =  27,531,755 (89.51%)
+    intronic = 1,848,165 (6.01%)
+    intergenic = 1,379,054 (4.48%)
+    overlapping exon = 720,479 (2.34%)
+    rRNA = 0 (0%)
+
+
+>>>>>>> Transcript coverage profile
+
+    5' bias = 0.84
+    3' bias = 0.67
+    5'-3' bias = 1.27
+
+
+>>>>>>> Junction analysis
+
+    reads at junctions = 5,523,548
+
+    ACCT : 5.34%
+    AGGT : 4.4%
+    AGGA : 3.32%
+    TCCT : 3.12%
+    AGCT : 2.98%
+    AGGC : 2.8%
+    ATCT : 2.77%
+    GCCT : 2.31%
+    AGAT : 2.12%
+    AGGG : 2.09%
+    CCCT : 1.87%
