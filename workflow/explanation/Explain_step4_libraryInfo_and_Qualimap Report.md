@@ -175,8 +175,8 @@ Splice sites are defined by short sequence patterns at the boundaries of introns
    -  So, an exon–intron boundary will look like “AG|GT” when you align exons and introns together.
 -  Less common motifs also exist (like GC–AG or AT–AC), and noncanonical sites are rare but real.
 In this report, the graph shows percentages of different motifs:
--  ACCT, AGGT, AGGA, etc. → these are the sequence signatures observed at the junctions your reads covered.
--  Reads at junctions: 5.5M → plenty of reads spanning exon-exon boundaries, confirming splicing was captured.
+-  ACCT, AGGT, AGGA, etc. → these are the sequence signatures observed at the junctions reads of this data covered.
+-  Reads at junctions: 5.5M (All categories= **Known junctions, Novel junctions, Partially known junctions**) → plenty of reads spanning exon-exon boundaries, confirming splicing was captured.
 -  Shows percentages of canonical splice motifs (AGGT is common in human).
 
   <p align="center">
