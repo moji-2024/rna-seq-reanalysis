@@ -171,8 +171,8 @@ This data(KO_SRR13633857) has below bias=
 
 Splice sites are defined by short sequence patterns at the boundaries of introns:
 -  Most common in humans:
-  -  GT–AG rule: introns usually begin with GT and end with AG.
-  -  So, an exon–intron boundary will look like “AG|GT” when you align exons and introns together.
+   -  GT–AG rule: introns usually begin with GT and end with AG.
+   -  So, an exon–intron boundary will look like “AG|GT” when you align exons and introns together.
 -  Less common motifs also exist (like GC–AG or AT–AC), and noncanonical sites are rare but real.
 In this report, the graph shows percentages of different motifs:
 -  ACCT, AGGT, AGGA, etc. → these are the sequence signatures observed at the junctions your reads covered.
