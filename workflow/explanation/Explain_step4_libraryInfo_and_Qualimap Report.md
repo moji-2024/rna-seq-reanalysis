@@ -71,15 +71,8 @@ What could they be?
 
 ---
 
+<h2>Coverage Profile Along Genes (3 plots: Total, Low, High expression genes)</h2> 
 
-
-Reads Genomic Origin (Graph & Table)
-  Exonic (89.5%): Most reads fall in exons → excellent, means your library prep captured real transcripts.
-  Intronic (6%) + Intergenic (4.5%): A small portion; normal background noise.
-  rRNA (0%): Very good. Means ribosomal RNA contamination is absent.
-  (Graph: pie chart showing where reads land in genome – exons, introns, intergenic.)
-
-Coverage Profile Along Genes (3 plots: Total, Low, High expression genes)
 What is coverage in RNA-seq?
 Coverage = how many sequencing reads overlap a given position in the transcripts.
 Imagine a transcript (gene) as a rope stretched from 5′ end → 3′ end.
