@@ -192,16 +192,16 @@ In this report, the graph shows percentages of different motifs:
 <h1>2. Is this Data Good or Bad?</h1> 
 
 ✅ Good signs in this data:
-  High exonic reads (89.5%) → strong signal from transcripts.
-  Very low rRNA contamination.
-  Balanced strand specificity (expected for non-stranded).
-  Junction reads are present in large numbers → good splice representation.
-  Only 1.3% of reads failed to align → excellent mapping.
+-  High exonic reads (89.5%) → strong signal from transcripts.
+-  Very low rRNA contamination.
+-  Balanced strand specificity (expected for non-stranded).
+-  Junction reads are present in large numbers → good splice representation.
+-  Only 1.3% of reads failed to align → excellent mapping.
 
 ⚠️ Minor caveats:
-  Slight 5′ coverage bias. This is normal for RNA-seq, not fatal.
-  Around 10% of reads fell in intronic/intergenic regions → expected, but can be trimmed down with stricter filtering.
-Overall: Your RNA-seq data is high quality and perfectly usable for downstream analysis.
+-  Slight 5′ coverage bias. This is normal for RNA-seq, not fatal.
+-  Around 10% of reads fell in intronic/intergenic regions → expected, but can be trimmed down with stricter filtering.
+Overall: This RNA-seq data is high quality and perfectly usable for downstream analysis.
 
 <h1>3. Next Steps</h1> 
 
