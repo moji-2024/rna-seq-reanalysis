@@ -1,5 +1,4 @@
-since library is unstrandness then there are no need for relignment with flag related to stranness and strand flag for qualimap.
-
+Since this library is unstranded, there’s no need to realign using strand-specific flags, nor to apply strand flags in Qualimap.
 1. Exonic reads (≈90% in your data)
 
 These fall inside annotated exons — the protein-coding or mature transcript parts of genes.
