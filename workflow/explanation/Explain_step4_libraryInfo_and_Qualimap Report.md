@@ -5,6 +5,7 @@
 
 <h1>1. Understanding the Qualimap Report</h1>
 1. Exonic reads (≈90% in your data)
+
 *** 
 
 These fall inside annotated exons — the protein-coding or mature transcript parts of genes.
