@@ -15,9 +15,9 @@
 
 - Strand specificity (0.51/0.49): Confirms your data is non-stranded.
 
-<h2>Reads Genomic Origin (Graph & Table)</h2>
+<h2>Reads Genomic Origin </h2>
 
-<h3>1. Exonic reads (≈90% in your data)</h3>
+<h3>1. Exonic reads (≈90% in sample KO_SRR13633857)</h3>
 
 These fall inside annotated **exons** — the protein-coding or mature transcript parts of genes.
 
@@ -34,7 +34,7 @@ Typical RNA types here:
 👉 In RNA-seq, a **high exonic fraction is good** because it means you captured mature transcripts, not random noise.
 *** 
 
-<h3>2. Intronic reads (≈6% in this data)</h3>
+<h3>2. Intronic reads (≈6% in sample KO_SRR13633857)</h3>
 
 These are inside introns, the parts usually cut out during splicing.
 Possible explanations:
@@ -52,7 +52,7 @@ Possible explanations:
 👉 Some intronic signal is normal (often 5–15%). Very high intronic reads (>30–40%) may mean poor poly(A) selection or contamination with nuclear RNA.
 *** 
 
-<h3>3. Intergenic reads (≈4.5% in this data)</h3>
+<h3>3. Intergenic reads (≈4.5% in sample KO_SRR13633857)</h3>
 
 These fall **outside annotated genes**.
 What could they be?
@@ -68,7 +68,7 @@ What could they be?
 👉 A small fraction of intergenic reads is expected. If it’s very high (>20–30%), it could indicate problems with annotation (using an incomplete GTF) or contamination.
 *** 
 
-
+[library_info](../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport/Reads Genomic Origin.png)
 
 
 
