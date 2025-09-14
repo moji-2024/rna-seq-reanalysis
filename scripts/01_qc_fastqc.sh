@@ -5,7 +5,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DATA_DIR="$SCRIPT_DIR/../data/raw/"
 
 INPUT_DIR="$DATA_DIR/FastqFiles"
-OUTPUT_DIR="$SCRIPT_DIR/../results/plots/fastqc_results"
+OUTPUT_DIR="$SCRIPT_DIR/../results/fastqc_results"
 
 # Create output directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
