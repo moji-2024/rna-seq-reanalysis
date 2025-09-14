@@ -68,8 +68,9 @@ What could they be?
 👉 A small fraction of intergenic reads is expected. If it’s very high (>20–30%), it could indicate problems with annotation (using an incomplete GTF) or contamination.
 *** 
 
-[library_info](../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport)
-
+<p align="center">
+  <img src="../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport/Reads Genomic Origin.png" alt="Reads Genomic Origin" width="600">
+</p>
 
 
 
