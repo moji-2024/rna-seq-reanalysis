@@ -141,19 +141,19 @@ This data(KO_SRR13633857) has below bias=
 
 ---
 
+<h2>Coverage Histogram (0–50X)</h2> 
 
-
-
-
-
-
-Coverage Histogram (0–50X)
-  It shows at how many places in the transcriptome do we see 1 read, 2 reads, 10 reads, 20 reads…?
-  X-axis = coverage depth (how many reads overlap each base in a transcript)
-  Y-axis = number of bases (or fraction of the transcriptome) that have that coverage
+  -  It shows at how many places in the transcriptome do we see 1 read, 2 reads, 10 reads, 20 reads…?
+  -  X-axis = coverage depth (how many reads overlap each base in a transcript)
+  -  Y-axis = number of bases (or fraction of the transcriptome) that have that coverage
   Good RNA-seq should have many transcripts covered at useful depth.
-  This tells downstream tools (like DESeq2/edgeR) that you have enough coverage to detect expression.
+  **This tells downstream tools (like DESeq2/edgeR) that you have enough coverage to detect expression.**
 
+  <p align="center">
+  <img src="../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport/Transcript coverage histogram.png" alt="Transcript coverage histogram.png" width="600">
+</p>
+
+---
 
 
 
