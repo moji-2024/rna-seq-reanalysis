@@ -1,4 +1,5 @@
-Since this library is unstranded, there’s no need to realign using strand-specific flags, nor to apply strand flags in Qualimap.
+**Since this library is unstranded, there’s no need to realign using strand-specific flags, nor to apply strand flags in Qualimap.**
+**For simplicity in explaining the workflow, this file focuses on the KO_SRR13633857 sample.**
 1. Exonic reads (≈90% in your data)
 
 These fall inside annotated exons — the protein-coding or mature transcript parts of genes.
