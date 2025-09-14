@@ -160,21 +160,21 @@ This data(KO_SRR13633857) has below bias=
 
 ---
 
+<h2>Junction Analysis</h2> 
 
+**When RNA is transcribed, introns get spliced out, and exons are stitched together.**
+  
+-  A junction read is a sequencing read that spans across an exon–exon boundary.
+-  The Junction Analysis graph counts these reads and classifies them by the splice motifs they use (the bases at the splice donor and acceptor sites).
+**What do the motifs mean?**
 
-
-Junction Analysis
-  When RNA is transcribed, introns get spliced out, and exons are stitched together.
-    A junction read is a sequencing read that spans across an exon–exon boundary.
-  The Junction Analysis graph counts these reads and classifies them by the splice motifs they use (the bases at the splice donor and acceptor sites).
-  What do the motifs mean?
-    Splice sites are defined by short sequence patterns at the boundaries of introns:
-      Most common in humans:
-      GT–AG rule: introns usually begin with GT and end with AG.
-      So, an exon–intron boundary will look like “AG|GT” when you align exons and introns together.
-    Less common motifs also exist (like GC–AG or AT–AC), and noncanonical sites are rare but real.
-    In this report, the graph shows percentages of different motifs:
-      ACCT, AGGT, AGGA, etc. → these are the sequence signatures observed at the junctions your reads covered.
+Splice sites are defined by short sequence patterns at the boundaries of introns:
+-  Most common in humans:
+  -  GT–AG rule: introns usually begin with GT and end with AG.
+  -  So, an exon–intron boundary will look like “AG|GT” when you align exons and introns together.
+-  Less common motifs also exist (like GC–AG or AT–AC), and noncanonical sites are rare but real.
+In this report, the graph shows percentages of different motifs:
+-  ACCT, AGGT, AGGA, etc. → these are the sequence signatures observed at the junctions your reads covered.
   Reads at junctions: 5.5M → plenty of reads spanning exon-exon boundaries, confirming splicing was captured.
   Shows percentages of canonical splice motifs (AGGT is common in human).
   Your values look consistent with normal biology.
@@ -185,8 +185,8 @@ Junction Analysis
 
 
 
+<h1>2. Is this Data Good or Bad?</h1> 
 
-2. Is this Data Good or Bad?
 ✅ Good signs in this data:
   High exonic reads (89.5%) → strong signal from transcripts.
   Very low rRNA contamination.
