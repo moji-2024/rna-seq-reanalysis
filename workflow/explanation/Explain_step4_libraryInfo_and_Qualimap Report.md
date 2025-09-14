@@ -167,7 +167,7 @@ This data(KO_SRR13633857) has below bias=
 -  The splice sites at the boundaries of introns are defined by short conserved sequences, which are called **splice motifs**.
 -  The Junction Analysis graph counts these reads and classifies them by the **splice motifs** they use (the bases at the splice donor and acceptor sites).
 
-**What do the motifs mean?**
+**What do the splice motifs mean?**
 
 Splice sites are defined by short sequence patterns at the boundaries of introns:
 -  Most common in humans:
