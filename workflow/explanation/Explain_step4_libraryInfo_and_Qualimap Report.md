@@ -74,7 +74,7 @@ What could they be?
 <h2>Coverage Profile Along Genes (3 plots: Total, Low, High expression genes)</h2> 
 <h3>Terminology alert!</h3>
 
-**1 What is coverage in RNA-seq?**
+**1. What is coverage in RNA-seq?**
 - Coverage = how many sequencing reads overlap a given position in the transcripts.
 - Imagine a transcript (gene) as a rope stretched from 5′ end → 3′ end.
 
@@ -83,13 +83,14 @@ What could they be?
 
 **Note**: the 3′ end is more likely to have bias in typical RNA-seq datasets.
 
-**2 What is 5′ and 3′ bias?**
+**2. What is 5′ and 3′ bias?**
 - 3′ bias: Many RNA-seq protocols use poly(A) selection with oligo-dT primers, which grab transcripts starting at the poly(A) tail (3′ end). That naturally enriches reads near the 3′ end, giving you 3′ bias.
 - 5′ bias: 5′ bias does happen, but usually less often. It can show up if:
   Reverse transcriptase stops early (so you only sequence the start of transcripts).
   Fragmentation favors the 5′ region.
 
 <h3>How do Qualimap create Coverage Profile Along Genes plots:</h3>
+
 - Each plot is a line graph of read density across transcripts, from the 5′ end (start of the gene) on the left, to the 3′ end (end of the gene) on the right.
   Qualimap squash all genes together, normalize them to the same length, and then average coverage across them.
 
