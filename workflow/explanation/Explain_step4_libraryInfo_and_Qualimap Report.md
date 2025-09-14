@@ -7,7 +7,7 @@
 
 <h2>Reads Alignment (Table)</h2> 
 
-- Mapped reads (26.8M): These are reads that aligned to the genome. This is a healthy number.
+- Mapped reads (26.8M): These are reads that aligned to the genome. This is a healthy number. This is wnat we want.
 
 - Secondary alignments (5.5M): Reads that align in more than one place. Expected in RNA-seq.
 
@@ -15,9 +15,11 @@
 
 - Strand specificity (0.51/0.49): Confirms your data is non-stranded.
 
-1. Exonic reads (≈90% in your data)
+<h2>Reads Genomic Origin (Graph & Table)</h2>
 
-*** 
+- 1. Exonic reads (≈90% in your data)
+
+
 
 These fall inside annotated exons — the protein-coding or mature transcript parts of genes.
 Typical RNA types here:
@@ -31,6 +33,7 @@ miRNA precursors, snoRNAs, snRNAs that are annotated as exon-like regions.
 Basically, any RNA that makes it into the “final transcript” after splicing.
 
 👉 In RNA-seq, a high exonic fraction is good because it means you captured mature transcripts, not random noise.
+*** 
 
 2. Intronic reads (≈6% in your data)
 
