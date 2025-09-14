@@ -2,7 +2,7 @@
 - [library_info](../../results/texts/strandness/library_info.txt)
 
 **For simplicity in explaining the workflow, this file focuses on the KO_SRR13633857 sample.**
-***1. Understanding the Qualimap Report***
+**1. Understanding the Qualimap Report**
 1. Exonic reads (≈90% in your data)
 
 These fall inside annotated exons — the protein-coding or mature transcript parts of genes.
