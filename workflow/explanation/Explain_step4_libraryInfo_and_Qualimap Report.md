@@ -17,12 +17,10 @@
 
 <h2>Reads Genomic Origin (Graph & Table)</h2>
 
-- 1. Exonic reads (≈90% in your data)
-
-
-
+- 1. Exonic reads (≈90% in your data): 
 These fall inside annotated exons — the protein-coding or mature transcript parts of genes.
-Typical RNA types here:
+
+- Typical RNA types here:
 
 mRNA (messenger RNA) → the main product of RNA-seq, spliced and coding.
 
