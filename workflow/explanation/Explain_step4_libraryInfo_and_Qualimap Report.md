@@ -166,6 +166,7 @@ This data(KO_SRR13633857) has below bias=
   
 -  A junction read is a sequencing read that spans across an exon–exon boundary.
 -  The Junction Analysis graph counts these reads and classifies them by the splice motifs they use (the bases at the splice donor and acceptor sites).
+
 **What do the motifs mean?**
 
 Splice sites are defined by short sequence patterns at the boundaries of introns:
