@@ -1,4 +1,5 @@
 General Summary of FastQC Results (All 6 Files)
+- First sample graph:
 <p align="center">
   <img src="../../images/Per base sequence quality_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
