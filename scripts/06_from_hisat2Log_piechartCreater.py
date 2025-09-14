@@ -6,7 +6,7 @@ conda activate rnaseq-tools
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DATA_DIR="$SCRIPT_DIR/../data"
 LogFolder_DIR="$DATA_DIR/processed/logs"
-OutputFolder_DIR="$SCRIPT_DIR/../results/plots/pieChartCreater_results"
+OutputFolder_DIR="$SCRIPT_DIR/../results/pieChartCreater_results"
 echo "progress make dir $OutputFolder_DIR"
 mkdir -p "$OutputFolder_DIR"
 
