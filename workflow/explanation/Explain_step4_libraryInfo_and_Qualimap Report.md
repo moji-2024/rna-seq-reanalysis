@@ -89,9 +89,8 @@ What could they be?
   Reverse transcriptase stops early (so you only sequence the start of transcripts).
   Fragmentation favors the 5′ region.
 
-<h3>Role of Qualimap:</h3>
-- Each plot is a line graph of read density across transcripts, from the 5′ end (start of the gene) on the left, to the 3′ end (end of the gene) on the right.
-Qualimap squash all genes together, normalize them to the same length, and then average coverage across them.
+<h3>How do Qualimap create Coverage Profile Along Genes plots:</h3>
+- Each plot is a line graph of read density across transcripts, from the 5′ end (start of the gene) on the left, to the 3′ end (end of the gene) on the right. Qualimap squash all genes together, normalize them to the same length, and then average coverage across them.
 
 <h3>What are each axis in Coverage Profile Along Genes</h3>
 - *X-axis* = transcript position (0–100%)
