@@ -72,8 +72,7 @@ What could they be?
 ---
 
 <h2>Coverage Profile Along Genes (3 plots: Total, Low, High expression genes)</h2> 
-
-**Terminology alert!**
+<h3>Terminology alert!</h3>
 
 **1 What is coverage in RNA-seq?**
 - Coverage = how many sequencing reads overlap a given position in the transcripts.
