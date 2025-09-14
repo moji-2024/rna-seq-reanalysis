@@ -222,4 +222,5 @@ In this report, the graph shows percentages of different motifs:
 
 -  This RNA-seq dataset passed QC with ~90% exonic reads, strong mapping rates, and minimal contamination.
 -  Coverage is balanced across transcripts, with only a mild 5′ bias typical of RNA-seq.
--  Junction reads confirm splicing capture. Overall, the dataset is high-quality and ready for downstream differential expression and functional analysis.
+-  Junction reads confirm splicing capture.
+-  **Overall**, the dataset is high-quality and ready for downstream differential expression and functional analysis.
