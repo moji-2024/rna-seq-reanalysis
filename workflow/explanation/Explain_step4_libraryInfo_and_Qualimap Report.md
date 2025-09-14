@@ -13,7 +13,7 @@
 
 - Not aligned (452k): Very small fraction. == That’s good.
 
-- Strand specificity (0.51/0.49): == Confirms data is non-stranded.
+- Strand specificity (0.51/0.49): == Confirms data is not strand based.
 
 <h2>Reads Genomic Origin </h2>
 
