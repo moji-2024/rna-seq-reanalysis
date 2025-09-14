@@ -19,6 +19,8 @@
 
 <h3>1. Exonic reads (≈90% in sample KO_SRR13633857)</h3>
 
+**When RNA is transcribed, introns get spliced out, and exons are stitched together. → mature mRNA contain exons not introns**
+
 These fall inside annotated **exons** — the protein-coding or mature transcript parts of genes.
 
 Typical RNA types here:
@@ -161,8 +163,6 @@ This data(KO_SRR13633857) has below bias=
 ---
 
 <h2>Junction Analysis</h2> 
-
-**When RNA is transcribed, introns get spliced out, and exons are stitched together.**
   
 -  A junction read is a sequencing read that spans across an exon–exon boundary.
 -  The Junction Analysis graph counts these reads and classifies them by the splice motifs they use (the bases at the splice donor and acceptor sites).
