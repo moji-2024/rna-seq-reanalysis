@@ -201,7 +201,8 @@ In this report, the graph shows percentages of different motifs:
 ⚠️ Minor caveats:
 -  Slight 5′ coverage bias. This is normal for RNA-seq, not fatal.
 -  Around 10% of reads fell in intronic/intergenic regions → expected, but can be trimmed down with stricter filtering.
-Overall: This RNA-seq data is high quality and perfectly usable for downstream analysis.
+
+**Overall**: This RNA-seq data is high quality and perfectly usable for downstream analysis.
 
 <h1>3. Next Steps</h1> 
 
