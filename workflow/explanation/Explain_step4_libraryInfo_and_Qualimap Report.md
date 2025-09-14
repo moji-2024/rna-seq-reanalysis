@@ -149,7 +149,9 @@ This data(KO_SRR13633857) has below bias=
   -  It shows at how many places in the transcriptome do we see 1 read, 2 reads, 10 reads, 20 reads…?
   -  X-axis = coverage depth (how many reads overlap each base in a transcript)
   -  Y-axis = number of bases (or fraction of the transcriptome) that have that coverage
+
   Good RNA-seq should have many transcripts covered at useful depth.
+  
   **This tells downstream tools (like DESeq2/edgeR) that you have enough coverage to detect expression.**
 
   <p align="center">
