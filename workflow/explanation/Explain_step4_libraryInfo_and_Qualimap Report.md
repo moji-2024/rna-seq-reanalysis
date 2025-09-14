@@ -40,18 +40,17 @@ Typical RNA types here:
 These are inside introns, the parts usually cut out during splicing.
 Possible explanations:
 
-- **Unspliced pre-mRNA** → immature transcripts still being processed in the nucleus.
+- **Unspliced pre-mRNA** → immature transcripts that remain in the nucleus and have not yet undergone full splicing.
 
-- **Retained introns** → some alternative splicing events keep introns in mature RNA.
+- **Retained introns** → alternative splicing events in which certain introns are preserved in the mature RNA.
 
-- **Nascent transcription** → reads caught while RNA polymerase was still working.
+- **Nascent transcription** → reads captured while RNA polymerase was still elongating the transcript.
 
-- **Noncoding RNAs** → some lncRNAs and regulatory RNAs overlap intronic regions.
+- **Noncoding RNAs** → lncRNAs and other regulatory RNAs that overlap intronic regions.
 
-- **Technical artifact** → incomplete removal of nuclear RNA during library prep.
+- **Technical artifact** → residual nuclear RNA or other carry-overs from library preparation.
 
-👉 Some intronic signal is normal (often 5–15%). Very high intronic reads (>30–40%) may mean poor poly(A) selection or contamination with nuclear RNA.
-
+👉 A modest intronic signal (typically 5–15%) is expected. However, a high proportion of intronic reads (>30–40%) often indicates inefficient poly(A) selection or contamination with nuclear RNA.
 <h3>3. Intergenic reads (≈4.5% in sample KO_SRR13633857)</h3>
 
 These fall **outside annotated genes**.
@@ -126,7 +125,7 @@ This data(KO_SRR13633857) has below bias=
 
   Shows coverage distribution only for genes with low read counts.
   These often look noisier and less uniform, because there aren’t many reads to smooth the curve.
-  If low-expression genes show extreme bias, it might mean short transcripts or uneven capture in weakly expressed genes.
+  Extreme bias in low-expression genes may indicate short transcripts or uneven capture of these transcripts.
 
   <p align="center">
   <img src="../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport/Coverage Profile Along Genes (Low).png" alt="Coverage Profile Along Genes (Low).png" width="600">
@@ -152,7 +151,7 @@ This data(KO_SRR13633857) has below bias=
   -  X-axis = coverage depth (how many reads overlap each base in a transcript)
   -  Y-axis = number of bases (or fraction of the transcriptome) that have that coverage
 
-  Good RNA-seq should have many transcripts covered at useful depth.
+ High-quality RNA-seq → many transcripts covered at sufficient depth for reliable analysis.
   
   **This tells downstream tools (like DESeq2/edgeR) that you have enough coverage to detect expression.**
 
@@ -187,8 +186,6 @@ In this report, the graph shows percentages of different motifs:
 
 
 
-
-
 <h1>2. Is this Data Good or Bad?</h1> 
 
 ✅ Good signs in this data:
@@ -199,24 +196,23 @@ In this report, the graph shows percentages of different motifs:
 -  Only 1.3% of reads failed to align → excellent mapping.
 
 ⚠️ Minor caveats:
--  Slight 5′ coverage bias. This is normal for RNA-seq, not fatal.
+-  Slight 5′ coverage bias. This is normal for RNA-seq, not problematic.
 -  Around 10% of reads fell in intronic/intergenic regions → expected, but can be trimmed down with stricter filtering.
 
-**Overall**: This RNA-seq data is high quality and perfectly usable for downstream analysis.
-
+**Overall**: This RNA-seq data is high quality and fully suitable for downstream analysis.
 <h1>3. Next Steps</h1> 
 
 -  1.Generate count matrix:
-    -  By "Salmon" to get a gene-by-sample counts table.
+    -  By "Salmon" to produce a gene-by-sample counts table
 -  2.Normalization:
     -  Apply DESeq2 (R) to account for sequencing depth and library size.
 -  3.Differential Expression Analysis:
-    -  Compare KO vs WT or conditions of interest. Find up- and down-regulated genes.
+    -  Compare KO vs WT (or other conditions) to identify up- and down-regulated genes.
 -  4.Exploratory Analysis:
-    -  PCA/Clustering → see if samples group by condition.
-    -  Heatmaps → visualize top DE genes.
+    -  PCA/Clustering → assess whether samples group by condition.
+    -  Heatmaps → visualize top differentially expressed genes.
 -  5.Functional Analysis
-    -  Pathway enrichment (KEGG, GSEA, Reactome) to interpret biological meaning.
+    -  Perform Pathway enrichment (KEGG, GSEA, Reactome) to interpret biological significance.
 
 <h1>Final word</h1> 
 
