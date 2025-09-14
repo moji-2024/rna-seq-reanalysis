@@ -208,14 +208,16 @@ Overall: Your RNA-seq data is high quality and perfectly usable for downstream a
 -  1.Generate count matrix:
   -  By "Salmon" to get a gene-by-sample counts table.
 -  2.Normalization:
-    Apply DESeq2 (R) to account for sequencing depth and library size.
+  -  Apply DESeq2 (R) to account for sequencing depth and library size.
 -  3.Differential Expression Analysis:
-    Compare KO vs WT or conditions of interest. Find up- and down-regulated genes.
+  -  Compare KO vs WT or conditions of interest. Find up- and down-regulated genes.
 -  4.Exploratory Analysis:
-    PCA/Clustering → see if samples group by condition.
-    Heatmaps → visualize top DE genes.
+  -  PCA/Clustering → see if samples group by condition.
+  -  Heatmaps → visualize top DE genes.
 -  5.Functional Analysis
-  Pathway enrichment (KEGG, GSEA, Reactome) to interpret biological meaning.
+  -  Pathway enrichment (KEGG, GSEA, Reactome) to interpret biological meaning.
 
-
-*This RNA-seq dataset passed QC with ~90% exonic reads, strong mapping rates, and minimal contamination. Coverage is balanced across transcripts, with only a mild 5′ bias typical of RNA-seq. Junction reads confirm splicing capture. Overall, the dataset is high-quality and ready for downstream differential expression and functional analysis.
+<h1>Final word</h1> 
+-  This RNA-seq dataset passed QC with ~90% exonic reads, strong mapping rates, and minimal contamination.
+-  Coverage is balanced across transcripts, with only a mild 5′ bias typical of RNA-seq.
+-  Junction reads confirm splicing capture. Overall, the dataset is high-quality and ready for downstream differential expression and functional analysis.
