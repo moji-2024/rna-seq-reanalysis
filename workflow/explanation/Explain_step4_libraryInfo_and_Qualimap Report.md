@@ -102,7 +102,7 @@ This data(KO_SRR13633857) has below bias= 5′ bias = 0.84, 3′ bias = 0.67, 5�
   0% (left side) → the Transcription Start Site (TSS), the beginning of the mRNA (the 5′ end).
   100% (right side) → the Transcription Termination Site (TTS), the end of the mRNA (the 3′ end).
 - *Y-axis* = average read coverage at that position (normalized).
-- 
+ 
 <h3>Each Coverage Profile Along Genes plot</h3>
 
 - 1) Total (all genes combined):
