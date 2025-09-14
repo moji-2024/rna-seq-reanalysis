@@ -17,9 +17,9 @@
 
 <h2>Reads Genomic Origin </h2>
 
-<h3>1. Exonic reads (≈90% in sample KO_SRR13633857)</h3>
-
 **When RNA is transcribed, introns get spliced out, and exons are stitched together. → mature mRNA contain exons not introns**
+
+<h3>1. Exonic reads (≈90% in sample KO_SRR13633857)</h3>
 
 These fall inside annotated **exons** — the protein-coding or mature transcript parts of genes.
 
