@@ -83,10 +83,10 @@ What could they be?
 - If most of the sequencing reads is stuck only at one end, that’s biased coverage.
 
 **Note**: the 3′ end is more likely to have bias in typical RNA-seq datasets.
-**2 What is 5′ and 3′ bias?**
-3′ bias: Many RNA-seq protocols use poly(A) selection with oligo-dT primers, which grab transcripts starting at the poly(A) tail (3′ end). That naturally enriches reads near the 3′ end, giving you 3′ bias.
 
-5′ bias: 5′ bias does happen, but usually less often. It can show up if:
+**2 What is 5′ and 3′ bias?**
+- 3′ bias: Many RNA-seq protocols use poly(A) selection with oligo-dT primers, which grab transcripts starting at the poly(A) tail (3′ end). That naturally enriches reads near the 3′ end, giving you 3′ bias.
+- 5′ bias: 5′ bias does happen, but usually less often. It can show up if:
   Reverse transcriptase stops early (so you only sequence the start of transcripts).
   Fragmentation favors the 5′ region.
 
