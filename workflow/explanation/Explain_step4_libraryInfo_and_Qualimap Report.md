@@ -108,7 +108,8 @@ This data(KO_SRR13633857) has below bias=
  
 <h3>Each Coverage Profile Along Genes plot</h3>
 
-- 1) Total (all genes combined):
+- 1) **Total (all genes combined):**
+
   This averages coverage across all genes.
   It gives you a global sense of bias.
   In your data, coverage is slightly higher at the 5′ end and drops a bit toward the 3′ end.
@@ -119,7 +120,8 @@ This data(KO_SRR13633857) has below bias=
 
 ---
   
-- 2) Low expression genes:
+- 2) **Low expression genes:**
+
   Shows coverage distribution only for genes with low read counts.
   These often look noisier and less uniform, because there aren’t many reads to smooth the curve.
   If low-expression genes show extreme bias, it might mean short transcripts or uneven capture in weakly expressed genes.
@@ -130,7 +132,8 @@ This data(KO_SRR13633857) has below bias=
 
 ---
 
-- 3) High expression genes:
+- 3) **High expression genes:**
+
   Shows coverage across highly expressed transcripts only.
   These curves are usually smoother, since there are many reads.
   If there’s a strong 5′ or 3′ skew here, it reflects a true systematic bias from library prep rather than random noise.
