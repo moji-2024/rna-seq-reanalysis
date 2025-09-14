@@ -17,36 +17,37 @@
 
 <h2>Reads Genomic Origin (Graph & Table)</h2>
 
-- 1. Exonic reads (≈90% in your data): 
-These fall inside annotated exons — the protein-coding or mature transcript parts of genes.
+<h3>1. Exonic reads (≈90% in your data)</h3>
 
-- Typical RNA types here:
+These fall inside annotated **exons** — the protein-coding or mature transcript parts of genes.
 
-mRNA (messenger RNA) → the main product of RNA-seq, spliced and coding.
+Typical RNA types here:
 
-lncRNA exons (long noncoding RNA) → also transcribed but not coding proteins.
+- **mRNA** (messenger RNA) → the main product of RNA-seq, spliced and coding.
 
-miRNA precursors, snoRNAs, snRNAs that are annotated as exon-like regions.
+- **lncRNA exons** (long noncoding RNA) → also transcribed but not coding proteins.
 
-Basically, any RNA that makes it into the “final transcript” after splicing.
+- **miRNA precursors**, **snoRNAs**, **snRNAs** that are annotated as exon-like regions.
 
-👉 In RNA-seq, a high exonic fraction is good because it means you captured mature transcripts, not random noise.
+- Basically, **any RNA that makes it into the “final transcript” after splicing**.
+
+👉 In RNA-seq, a **high exonic fraction is good** because it means you captured mature transcripts, not random noise.
 *** 
 
-2. Intronic reads (≈6% in your data)
+**2. Intronic reads (≈6% in your data)**
 
 These are inside introns, the parts usually cut out during splicing.
 Possible explanations:
 
-Unspliced pre-mRNA → immature transcripts still being processed in the nucleus.
+- **Unspliced pre-mRNA** → immature transcripts still being processed in the nucleus.
 
-Retained introns → some alternative splicing events keep introns in mature RNA.
+- **Retained introns** → some alternative splicing events keep introns in mature RNA.
 
-Nascent transcription → reads caught while RNA polymerase was still working.
+- **Nascent transcription** → reads caught while RNA polymerase was still working.
 
-Noncoding RNAs → some lncRNAs and regulatory RNAs overlap intronic regions.
+- **Noncoding RNAs** → some lncRNAs and regulatory RNAs overlap intronic regions.
 
-Technical artifact → incomplete removal of nuclear RNA during library prep.
+- **Technical artifact** → incomplete removal of nuclear RNA during library prep.
 
 👉 Some intronic signal is normal (often 5–15%). Very high intronic reads (>30–40%) may mean poor poly(A) selection or contamination with nuclear RNA.
 
