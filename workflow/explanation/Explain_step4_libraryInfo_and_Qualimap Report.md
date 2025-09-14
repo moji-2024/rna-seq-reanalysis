@@ -34,7 +34,7 @@ Typical RNA types here:
 👉 In RNA-seq, a **high exonic fraction is good** because it means you captured mature transcripts, not random noise.
 *** 
 
-**2. Intronic reads (≈6% in your data)**
+<h3>2. Intronic reads (≈6% in your data)</h3>
 
 These are inside introns, the parts usually cut out during splicing.
 Possible explanations:
@@ -50,22 +50,23 @@ Possible explanations:
 - **Technical artifact** → incomplete removal of nuclear RNA during library prep.
 
 👉 Some intronic signal is normal (often 5–15%). Very high intronic reads (>30–40%) may mean poor poly(A) selection or contamination with nuclear RNA.
+*** 
 
-3. Intergenic reads (≈4.5% in your data)
+<h3>3. Intergenic reads (≈4.5% in your data)</h3>
 
-These fall outside annotated genes.
+These fall **outside annotated genes**.
 What could they be?
 
-Unannotated transcripts → novel lncRNAs, enhancer RNAs (eRNAs).
+- **Unannotated transcripts** → novel lncRNAs, enhancer RNAs (eRNAs).
 
-Antisense RNAs → transcribed from opposite strands of genes.
+- **Antisense RNAs** → transcribed from opposite strands of genes.
 
-Pseudogenes or lowly annotated gene fragments.
+- **Pseudogenes** or lowly annotated gene fragments.
 
-Noise/technical artifacts → random priming, misalignment, or sequencing errors.
+- **Noise/technical artifacts** → random priming, misalignment, or sequencing errors.
 
 👉 A small fraction of intergenic reads is expected. If it’s very high (>20–30%), it could indicate problems with annotation (using an incomplete GTF) or contamination.
-
+*** 
 
 
 
