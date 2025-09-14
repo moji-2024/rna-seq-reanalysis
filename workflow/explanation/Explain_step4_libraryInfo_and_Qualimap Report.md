@@ -34,7 +34,7 @@ Typical RNA types here:
 👉 In RNA-seq, a **high exonic fraction is good** because it means you captured mature transcripts, not random noise.
 *** 
 
-<h3>2. Intronic reads (≈6% in your data)</h3>
+<h3>2. Intronic reads (≈6% in this data)</h3>
 
 These are inside introns, the parts usually cut out during splicing.
 Possible explanations:
@@ -52,7 +52,7 @@ Possible explanations:
 👉 Some intronic signal is normal (often 5–15%). Very high intronic reads (>30–40%) may mean poor poly(A) selection or contamination with nuclear RNA.
 *** 
 
-<h3>3. Intergenic reads (≈4.5% in your data)</h3>
+<h3>3. Intergenic reads (≈4.5% in this data)</h3>
 
 These fall **outside annotated genes**.
 What could they be?
