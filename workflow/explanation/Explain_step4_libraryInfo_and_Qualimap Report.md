@@ -88,6 +88,8 @@ What could they be?
 - **5′ bias**: 5′ bias does happen, but usually less often. It can show up if:
   - Reverse transcriptase stops early (so you only sequence the start of transcripts).
   - Fragmentation favors the 5′ region.
+  
+This data(KO_SRR13633857) has below bias= 5′ bias = 0.84, 3′ bias = 0.67, 5′–3′ ratio = 1.27
 
 <h3>How do Qualimap create Coverage Profile Along Genes plots:</h3>
 
@@ -95,25 +97,48 @@ What could they be?
   Qualimap squash all genes together, normalize them to the same length, and then average coverage across them.
 
 <h3>What are each axis in Coverage Profile Along Genes</h3>
+
 - *X-axis* = transcript position (0–100%)
   0% (left side) → the Transcription Start Site (TSS), the beginning of the mRNA (the 5′ end).
   100% (right side) → the Transcription Termination Site (TTS), the end of the mRNA (the 3′ end).
 - *Y-axis* = average read coverage at that position (normalized).
+- 
+<h3>Each Coverage Profile Along Genes plot</h3>
 
-1) Total (all genes combined):
+- 1) Total (all genes combined):
   This averages coverage across all genes.
   It gives you a global sense of bias.
   In your data, coverage is slightly higher at the 5′ end and drops a bit toward the 3′ end.
-  (Graphs: line plots showing read coverage across transcripts. If one end is too skewed, it signals bias from library prep.)
-3) Low expression genes:
+
+  <p align="center">
+  <img src="../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport/Coverage Profile Along Genes (Total).png" alt="Coverage Profile Along Genes (Total).png" width="600">
+</p>
+
+---
+  
+- 2) Low expression genes:
   Shows coverage distribution only for genes with low read counts.
   These often look noisier and less uniform, because there aren’t many reads to smooth the curve.
   If low-expression genes show extreme bias, it might mean short transcripts or uneven capture in weakly expressed genes.
-4) High expression genes:
+
+  <p align="center">
+  <img src="../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport/Coverage Profile Along Genes (Low).png" alt="Coverage Profile Along Genes (Low).png" width="600">
+</p>
+
+---
+
+- 3) High expression genes:
   Shows coverage across highly expressed transcripts only.
   These curves are usually smoother, since there are many reads.
   If there’s a strong 5′ or 3′ skew here, it reflects a true systematic bias from library prep rather than random noise.
-This data(KO_SRR13633857) bias= 5′ bias = 0.84, 3′ bias = 0.67, 5′–3′ ratio = 1.27
+
+  <p align="center">
+  <img src="../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport/Coverage Profile Along Genes (High).png" alt="Coverage Profile Along Genes (High).png" width="600">
+</p>
+
+---
+
+
 
 
 
