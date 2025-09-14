@@ -164,7 +164,8 @@ This data(KO_SRR13633857) has below bias=
 <h2>Junction Analysis</h2> 
   
 -  A junction read is a sequencing read that spans across an exon–exon boundary.
--  The Junction Analysis graph counts these reads and classifies them by the splice motifs they use (the bases at the splice donor and acceptor sites).
+-  The splice sites at the boundaries of introns are defined by short conserved sequences, which are called **splice motifs**.
+-  The Junction Analysis graph counts these reads and classifies them by the **splice motifs** they use (the bases at the splice donor and acceptor sites).
 
 **What do the motifs mean?**
 
@@ -173,10 +174,10 @@ Splice sites are defined by short sequence patterns at the boundaries of introns
    -  GT–AG rule: introns usually begin with GT and end with AG.
    -  So, an exon–intron boundary will look like “AG|GT” when you align exons and introns together.
 -  Less common motifs also exist (like GC–AG or AT–AC), and noncanonical sites are rare but real.
-In this report, the graph shows percentages of different motifs:
+In this report, the graph shows percentages of different splice motifs:
 -  ACCT, AGGT, AGGA, etc. → these are the sequence signatures observed at the junctions reads of this data covered.
 -  Reads at junctions: 5.5M (All categories= **Known junctions, Novel junctions, Partially known junctions**) → plenty of reads spanning exon-exon boundaries, confirming splicing was captured.
--  Shows percentages of canonical splice motifs (AGGT is common in human).
+-  Shows percentages of canonical **splice motifs** (AGGT is common in human).
 
   <p align="center">
   <img src="../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport/Junction Analysis.png" alt="Junction Analysis.png" width="600">
