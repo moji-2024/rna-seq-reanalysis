@@ -114,7 +114,7 @@ This data(KO_SRR13633857) has below bias=
 
   This averages coverage across all genes.
   It gives you a global sense of bias.
-  In your data, coverage is slightly higher at the 5′ end and drops a bit toward the 3′ end.
+  In this data, coverage is slightly higher at the 5′ end and drops a bit toward the 3′ end.
 
   <p align="center">
   <img src="../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport/Coverage Profile Along Genes (Total).png" alt="Coverage Profile Along Genes (Total).png" width="600">
