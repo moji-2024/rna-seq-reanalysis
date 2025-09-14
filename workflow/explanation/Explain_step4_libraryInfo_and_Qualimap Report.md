@@ -72,6 +72,8 @@ What could they be?
   <img src="../../results/qualimap_results/trimmed_KO_SRR13633857_sorted_bam_qualimap/images_qualimapReport/Reads Genomic Origin.png" alt="Reads Genomic Origin" width="600">
 </p>
 
+---
+
 
 
 Reads Genomic Origin (Graph & Table)
