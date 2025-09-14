@@ -89,7 +89,10 @@ What could they be?
   - Reverse transcriptase stops early (so you only sequence the start of transcripts).
   - Fragmentation favors the 5′ region.
   
-This data(KO_SRR13633857) has below bias= 5′ bias = 0.84, 3′ bias = 0.67, 5′–3′ ratio = 1.27
+This data(KO_SRR13633857) has below bias=
+-  5′ bias = 0.84,
+-  3′ bias = 0.67,
+-  5′–3′ ratio = 1.27
 
 <h3>How do Qualimap create Coverage Profile Along Genes plots:</h3>
 
