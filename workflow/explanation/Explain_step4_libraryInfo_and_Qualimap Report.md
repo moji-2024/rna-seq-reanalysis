@@ -31,7 +31,7 @@ Typical RNA types here:
 
 - **miRNA precursors**, **snoRNAs**, **snRNAs** that are annotated as exon-like regions.
 
-- Basically, **any RNA that makes it into the “final transcript” after splicing**.
+**Basically, any RNA that makes it into the “final transcript” after splicing**.
 
 👉 In RNA-seq, a **high exonic fraction is good** because it means you captured mature transcripts, not random noise.
 
