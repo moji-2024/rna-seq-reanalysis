@@ -1,4 +1,4 @@
-**Note: Since this library is unstranded, there’s no need to realign using strand-specific flags, nor to apply strand flags in Qualimap.** 
+**Note: Since this library is unstranded, there’s no need to realign using strand-specific flags in hisat2, nor to apply strand flags in Qualimap.** 
 - [library_info](../../results/texts/strandness/library_info.txt)
 
 **For simplicity in explaining the workflow, this file focuses on the KO_SRR13633857 sample.**
