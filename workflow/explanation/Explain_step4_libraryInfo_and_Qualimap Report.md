@@ -4,6 +4,17 @@
 **For simplicity in explaining the workflow, this file focuses on the KO_SRR13633857 sample.**
 
 <h1>1. Understanding the Qualimap Report</h1>
+
+<h2>Reads Alignment (Table)</h2> 
+
+- Mapped reads (26.8M): These are reads that aligned to the genome. This is a healthy number.
+
+- Secondary alignments (5.5M): Reads that align in more than one place. Expected in RNA-seq.
+
+- Not aligned (452k): Very small fraction. That’s good.
+
+- Strand specificity (0.51/0.49): Confirms your data is non-stranded.
+
 1. Exonic reads (≈90% in your data)
 
 *** 
@@ -52,16 +63,9 @@ Pseudogenes or lowly annotated gene fragments.
 Noise/technical artifacts → random priming, misalignment, or sequencing errors.
 
 👉 A small fraction of intergenic reads is expected. If it’s very high (>20–30%), it could indicate problems with annotation (using an incomplete GTF) or contamination.
-1. Understanding the Report Sections
-Reads Alignment (Table)
 
-Mapped reads (26.8M): These are reads that aligned to the genome. This is a healthy number.
 
-Secondary alignments (5.5M): Reads that align in more than one place. Expected in RNA-seq.
 
-Not aligned (452k): Very small fraction. That’s good.
-
-Strand specificity (0.51/0.49): Confirms your data is non-stranded.
 
 
 
