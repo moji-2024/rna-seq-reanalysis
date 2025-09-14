@@ -7,7 +7,7 @@
 
 <h2>Reads Alignment (Table)</h2> 
 
-- Mapped reads (26.8M): These are reads that aligned to the genome. This is a healthy number. == This is wnat we want.
+- Mapped reads (26.8M): These are reads that aligned to the genome. This is a healthy number. == This is what we want.
 
 - Secondary alignments (5.5M): Reads that align in more than one place. == Expected in RNA-seq.
 
