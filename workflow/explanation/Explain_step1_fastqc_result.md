@@ -28,6 +28,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
 <p align="center">
   <img src="../../images/per_base_quality_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
+
 ---
 
 ### 2. **Per Sequence Quality Scores**
