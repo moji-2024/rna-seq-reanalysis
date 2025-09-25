@@ -42,6 +42,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
 <p align="center">
   <img src="../../images/per_sequence_quality_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
+
 ---
 
 ### 3. **Per Base Sequence Content**
@@ -56,6 +57,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
 <p align="center">
   <img src="../../images/per_base_sequence_content_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
+
 ---
 
 ### 4. **Per Sequence GC Content**
@@ -70,6 +72,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
 <p align="center">
   <img src="../../images/per_sequence_gc_content_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
+
 ---
 
 ### 5. **Per Base N Content**
@@ -83,6 +86,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
 <p align="center">
   <img src="../../images/per_base_n_content_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
+
 ---
 
 ### 6. **Sequence Length Distribution**
@@ -96,6 +100,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
 <p align="center">
   <img src="../../images/sequence_length_distribution_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
+
 ---
 
 ### 7. **Sequence Duplication Levels**
@@ -113,6 +118,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
 <p align="center">
   <img src="../../images/duplication_levels_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
+
 ---
 
 ### 8. **Overrepresented Sequences**
@@ -143,6 +149,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
 <p align="center">
   <img src="../../images/adapter_content_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
+
 ---
 
 
