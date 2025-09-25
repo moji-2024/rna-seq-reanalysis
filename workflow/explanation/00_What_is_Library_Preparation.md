@@ -17,6 +17,38 @@ Before we can analyze RNA-seq data, the raw RNA molecules from cells must be **c
 
 ---
 
+## 🧾 Steps of Library Preparation
+
+1. **RNA Extraction**  
+   - Total RNA is isolated from cells or tissue.  
+   - rRNA may be removed (rRNA depletion) or mRNA enriched (poly-A selection) depending on the experiment.  
+
+2. **Fragmentation**  
+   - RNA (or cDNA after reverse transcription) is fragmented into small pieces.  
+   - This ensures that short reads (~50–150 bp) can be generated, since Illumina cannot sequence full-length genes.  
+
+3. **cDNA Synthesis**  
+   - RNA is converted into complementary DNA (cDNA) using reverse transcriptase.  
+   - DNA is more stable than RNA and is required for sequencing.  
+
+4. **Adapter Ligation**  
+   - Short, known DNA sequences (adapters) are added to both ends of each fragment.  
+   - They provide priming sites for sequencing and barcodes for multiplexing.  
+
+5. **PCR Amplification**  
+   - The fragments are amplified so there is enough material for sequencing.  
+   - Illumina sequencers detect bases using **fluorescent signals** from clusters of identical fragments.  
+   - Without PCR amplification, the signal would be too weak for accurate base calling.  
+
+6. **Size Selection & Cleanup**  
+   - Fragments of the desired length are purified.  
+   - Very short fragments (e.g., adapter dimers) are removed to avoid sequencing artifacts.  
+
+7. **Final Library Ready for Sequencing**  
+   - The prepared library is loaded onto the sequencing flow cell, where fragments bind, form clusters, and are read base by base through fluorescent signals.  
+
+---
+
 ## 🔹 Role of Adapters
 Adapters are **short, known DNA sequences** that are ligated to both ends of each RNA fragment during library prep.
 
