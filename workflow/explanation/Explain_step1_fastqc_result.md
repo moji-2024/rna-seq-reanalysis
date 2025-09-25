@@ -65,6 +65,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
   -  Horizontal line inside the box → the median (middle value).
   -  Whiskers (lines extending above/below the box) → show the overall spread of values (excluding extreme outliers).
   -  Dots → outliers (rare values much higher or lower than most data).
+  
   👉 In FastQC, taller boxes or whiskers mean more variability in base quality at that position, while a flat box near the top (e.g. Q30+) means consistently high quality.
 - **What it shows**: Boxplots of quality scores (Phred) for each base position across all reads.  
 - **What is expected**:  
