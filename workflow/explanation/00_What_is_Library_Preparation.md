@@ -45,7 +45,20 @@ Before we can analyze RNA-seq data, the raw RNA molecules from cells must be **c
    - Very short fragments (e.g., adapter dimers) are removed to avoid sequencing artifacts.  
 
 7. **Final Library Ready for Sequencing**  
-   - The prepared library is loaded onto the sequencing flow cell, where fragments bind, form clusters, and are read base by base through fluorescent signals.  
+   - The prepared library is loaded onto the sequencing flow cell, where fragments bind, form clusters, and are read base by base through fluorescent signals.
+   - 
+### Why We Avoid Reads Shorter than 50 bp
+
+During library preparation, fragments that are **too short** are usually removed.  
+
+- **Why short reads (<50 bp) are problematic**:  
+  - They often map to multiple locations in the genome (low specificity).  
+  - They are more likely to align incorrectly, leading to **false positives** in quantification.  
+  - Very short fragments can be leftover **adapter dimers** or degraded RNA, which provide no useful biological information.  
+  - Many downstream tools (aligners, quantifiers) work best with reads of 75–150 bp, where mapping is much more reliable.  
+
+👉 In short: keeping read lengths **above 50 bp** ensures **accurate mapping, reliable quantification, and cleaner downstream analysis**.  
+
 
 ---
 
