@@ -1,50 +1,4 @@
-General Summary of FastQC Results (All 6 Files)
-- First sample graph:
-<p align="center">
-  <img src="../../images/Per base sequence quality_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
-</p>
-
-After reviewing multiple FastQC reports, we can make the following observations about the dataset as a whole:
-
-✔Common Passes Across All Samples
-Per base sequence quality: Most reads show high quality across the length of the sequences. This means the sequencer performed well overall.
-
-Per sequence quality scores: Quality distribution across reads is strong, with most reads having high average Phred scores.
-
-Adapter content: Minimal or no adapter contamination was detected, meaning library preparation was mostly clean.
-
-Sequence length distribution and N content are stable.
-
-! Consistent Warnings
-Per sequence GC content: Most files showed slight deviations from a normal GC distribution. This could indicate some technical bias or contamination in the library or uneven amplification of GC-rich regions.
-
-Sequence duplication levels: A moderate level of duplicated reads appeared across several samples. This is expected in low-input RNA-seq or over-sequenced libraries but still something to watch.
-
-✗ Shared Failures
-Per base sequence content: All or most samples failed this module. The beginning of the reads showed a strong imbalance in nucleotide composition, especially in the first 10–15 bases. This is typically caused by:
-
-Random hexamer priming (bias at the start of reads)
-
-Primer/adaptor sequence remnants
-
-Non-random fragmentation
-
-Why Trimming Is Required
-Trimming is needed across all samples for the following reasons:
-
-Correct Sequence Content Bias:
-All samples showed unnatural patterns at the beginning of reads. This can mess with aligners and bias downstream quantification. Trimming ~10–15 bases off the start usually fixes it.
-
-Remove Residual Low-Quality Bases:
-Even if overall quality is fine, individual reads may still contain low-quality bases at the ends that should be cut to reduce noise.
-
-Control GC Skew:
-GC content bias might be reduced by trimming problematic sections, helping ensure accurate expression or variant calling.
-
-Improve Mapping Efficiency:
-Removing biased or low-complexity sections improves read mappability and reduces spurious alignments.
-
-
+# *Graphs & results provided for sample: KO_SRR13633857*
 # Step 1: FastQC Quality Control
 
 ## 📌 Purpose of FastQC
@@ -52,7 +6,6 @@ FastQC is the first step in any RNA-seq workflow. It provides a quick overview o
 It checks for base quality, GC content, adapter contamination, duplication, overrepresented sequences, and other metrics.
 
 ---
-
 ## 📊 FastQC Report Modules & Interpretation
 
 Below are the main graphs in a FastQC report, what they mean, what is expected in high-quality data, and how to interpret your results.
@@ -73,7 +26,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
   - Slight drop in quality at the 3′ end is normal, especially in Illumina reads.  
 - **This result**: Quality scores are consistently high (>Q30) across nearly all bases, with only a minor drop at the end → acceptable.
 <p align="center">
-  <img src="../../images/Per base sequence quality_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
+  <img src="../../images/per_base_quality_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
 ---
 
@@ -86,7 +39,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
   -  This module helps detect whether a subset of your reads is problematic.
 - **This result**: Peak is centered above Q30, meaning most reads are high quality.
 <p align="center">
-  <img src="../../images/Per base sequence quality_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
+  <img src="../../images/per_sequence_quality_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
 </p>
 ---
 
@@ -99,7 +52,9 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
     -  In an ideal random library, the four bases should be evenly represented across positions.
     -  Large deviations can suggest technical biases (e.g., priming bias, adapter sequences, contamination).
 - **This result**: Some imbalance at the first ~10 bases (expected for RNA-seq), then lines stabilize → normal.
-
+<p align="center">
+  <img src="../../images/per_base_sequence_content_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
+</p>
 ---
 
 ### 4. **Per Sequence GC Content**
@@ -111,7 +66,9 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
   -  Each organism has a characteristic overall GC content (e.g., ~40–50% for human and mouse).
   -  Deviations (e.g., shifted peaks, multiple peaks) can signal contamination, bias in library prep, or non-random subsets of reads.
 - **This result**: Curve is symmetric around expected GC percentage (~40–50% for human/mouse) → good.
-
+<p align="center">
+  <img src="../../images/per_sequence_gc_content_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
+</p>
 ---
 
 ### 5. **Per Base N Content**
@@ -122,7 +79,9 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
   -  High N content means sequencing errors or problems with certain cycles (e.g., low signal, technical failure).
   -  Too many N’s reduce mapping accuracy because aligners can’t place those bases reliably.
 - **This result**: N content is negligible → good.
-
+<p align="center">
+  <img src="../../images/per_base_n_content_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
+</p>
 ---
 
 ### 6. **Sequence Length Distribution**
@@ -133,7 +92,9 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
   -  Consistent read length ensures uniform downstream processing (alignment, quantification).
   -  Unexpected variation in length can signal problems in library prep or trimming.
 - **This result**: Uniform length matching sequencing design → correct.
-
+<p align="center">
+  <img src="../../images/sequence_length_distribution_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
+</p>
 ---
 
 ### 7. **Sequence Duplication Levels**
@@ -148,7 +109,9 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
     -  Biological reasons → highly expressed transcripts (common in RNA-seq, e.g. ribosomal genes or abundant mRNAs).
   -  High duplication reduces the effective sequencing depth, since repeated reads don’t add new information.
 - **This result**: Some duplication seen, likely reflecting abundant transcripts (expected in RNA-seq).
-
+<p align="center">
+  <img src="../../images/duplication_levels_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
+</p>
 ---
 
 ### 8. **Overrepresented Sequences**
@@ -176,10 +139,14 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
     -  Artificial increase in duplication.
     -  Biased downstream results.
 - **This result**: Mild adapter contamination at the 3′ end → trimming step will fix this.
-
+<p align="center">
+  <img src="../../images/adapter_content_KO_SRR13633857.png" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
+</p>
 ---
 
-## ✅ Summary of Your FastQC Results
+
+**General Summary of FastQC Results (All 6 Files)**
+## ✅ Summary of This FastQC Results
 - **Read quality**: High (Q30+ across most positions).  
 - **Base composition**: Stable after initial bias (expected for RNA-seq).  
 - **GC content**: Matches reference genome.  
