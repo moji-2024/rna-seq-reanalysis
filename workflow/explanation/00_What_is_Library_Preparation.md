@@ -31,18 +31,23 @@ Adapters are **short, known DNA sequences** that are ligated to both ends of eac
 
 ---
 
-## 🔹 Role of PCR Amplification
-PCR (Polymerase Chain Reaction) is used in library prep to **amplify the amount of DNA** so there is enough material to sequence.
+## 🔹 Role of PCR Amplification (and Why Illumina Needs It)
+
+During library prep, PCR (Polymerase Chain Reaction) is used to **amplify DNA fragments** so that there is enough material for sequencing.
 
 - **Why it is needed**:  
-  - Starting RNA can be very limited. PCR ensures there are enough fragments for sequencing.  
+  - Starting RNA amounts can be very low.  
+  - Illumina sequencers use **fluorescent dyes** to detect bases (A, T, C, G) at each sequencing cycle.  
+  - To distinguish each base clearly, the sequencer needs **enough identical fragments in a cluster** so the fluorescent signal is strong and reliable.  
+  - Without amplification, the signal would be too weak, and the machine could not confidently call bases.  
 
 - **Potential issues**:  
-  - PCR can introduce **biases** → some fragments are amplified more than others.  
-  - Can increase **duplication rates** in the final data.  
-  - Over-amplification reduces library complexity.  
+  - Too much PCR can introduce **bias** (some fragments over-amplified, others underrepresented).  
+  - High PCR amplification increases **duplication levels** and reduces library complexity.  
 
-👉 That’s why **duplication analysis in FastQC** is important — it tells us whether PCR may have distorted the dataset.
+👉 In short: PCR makes sure there is **enough DNA to “light up” for Illumina’s cameras**, but must be carefully balanced to avoid technical artifacts.  
+
+💡 *Did you know?* Illumina doesn’t directly read bases — it reads **colored flashes of light** emitted from clusters of DNA molecules. That’s why having enough molecules is critical for accurate base calling.  
 
 ---
 
