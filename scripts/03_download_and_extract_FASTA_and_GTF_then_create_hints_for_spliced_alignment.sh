@@ -15,7 +15,7 @@ gunzip $INPUT_and_OUTPUT_DIR/*.gz
 mkdir -p "$DATA_DIR/processed/hints_for_spliced_alignment_DIR"
 PATH_hisat2=~/Tools/hisat2-2.2.1
 echo "$INPUT_and_OUTPUT_DIR/*.gtf"
-$PATH_hisat2/hisat2_extract_splice_sites.py $INPUT_and_OUTPUT_DIR/*.gtf > "$DATA_DIR/processed/hints_for_spliced_alignment_DIR/splice_sites.txt"
-$PATH_hisat2/hisat2_extract_exons.py $INPUT_and_OUTPUT_DIR/*.gtf > "$DATA_DIR/processed/hints_for_spliced_alignment_DIR/exons.txt"
+$PATH_hisat2/hisat2_extract_splice_sites.py $INPUT_and_OUTPUT_DIR/Homo_sapiens.GRCh38.84.gtf > "$DATA_DIR/processed/hints_for_spliced_alignment_DIR/splice_sites.txt"
+$PATH_hisat2/hisat2_extract_exons.py $INPUT_and_OUTPUT_DIR/Homo_sapiens.GRCh38.84.gtf > "$DATA_DIR/processed/hints_for_spliced_alignment_DIR/exons.txt"
 echo "hints_for_spliced_alignment files located in $DATA_DIR/processed/hints_for_spliced_alignment_DIR"
 echo "all data is ready"
