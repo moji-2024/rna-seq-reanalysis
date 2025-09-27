@@ -67,13 +67,13 @@ sudo make install
 ```
 
 
-### install fastp on conda:
+### install requaired tools on conda:
 ```bash
 cd ~
 wget https://github.com/conda-forge/miniforge/releases/download/24.11.3-2/Miniforge3-24.11.3-2-Linux-x86_64.sh
 bash Miniforge3-24.11.3-2-Linux-x86_64.sh
 
-conda create -n rnaseq-tools fastp=0.22.0 qualimap=2.2.2a rseqc=5.0.1 gxf2bed=0.2.7 -c conda-forge -c bioconda -c defaults -y
+conda create -n rnaseq-tools fastp=0.22.0 qualimap=2.2.2a rseqc=5.0.1 gxf2bed=0.2.7 multiqc=1.30 -c conda-forge -c bioconda -c defaults -y
 ```
 ## Getting Started
 #Run below codes in your terminal:
