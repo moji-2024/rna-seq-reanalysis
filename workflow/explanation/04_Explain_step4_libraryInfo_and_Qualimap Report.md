@@ -1,3 +1,22 @@
+## 📌 Library Strandness Check (infer_experiment.py)
+
+When running **`infer_experiment.py`** , the tool compares aligned reads (BAM file) with the genome annotation to determine the **strandness of the RNA-seq library**(Reads came from +strand or -strand).
+
+### 🔹 Meaning of the Symbols
+- **"++, --"** → Reads map to the **same strand** as the annotated transcript.  
+  - `++` = read and transcript both on the forward strand.  
+  - `--` = read and transcript both on the reverse strand.  
+  👉 Together, this pattern suggests a **same-strand orientation**.  
+
+- **"+-, -+"** → Reads map to the **opposite strand** of the annotated transcript.  
+  - `+-` = read maps forward, transcript annotated on reverse.  
+  - `-+` = read maps reverse, transcript annotated on forward.  
+  👉 Together, this pattern suggests a **reverse-strand orientation**.  
+
+---
+
+### 🔹 This study Library: 
+
 **Note: Since this library is unstranded, there’s no need to realign using strand-specific flags in hisat2, nor to apply strand flags in Qualimap.** 
 - [library_info](../../results/texts/strandness/library_info.txt)
 
