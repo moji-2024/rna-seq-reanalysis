@@ -15,7 +15,7 @@ When running **`infer_experiment.py`** , the tool compares aligned reads (BAM fi
 
 ---
 
-### 🔹 This study Library: 
+### 🔹 This study Library: - [library_info](../../results/texts/strandness/library_info.txt)
 
 **Note: Since this library is unstranded, there’s no need to realign using strand-specific flags in hisat2, nor to apply strand flags in Qualimap.** 
 - [library_info](../../results/texts/strandness/library_info.txt)
