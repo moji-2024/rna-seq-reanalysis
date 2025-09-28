@@ -17,6 +17,25 @@ ALIGN_DIR="$DATA_DIR/processed/align"
 LOG_DIR="$DATA_DIR/processed/logs"
 mkdir -p $ALIGN_DIR $LOG_DIR
 
+
+    # ----------------------------
+    # Read group (RG) flags explained:
+    # ----------------------------
+    # --rg-id $sample    : Assigns a unique Read Group ID for this run. 
+    #                      Each sample should have its own ID to distinguish data sources.
+    #
+    # --rg SM:$sample    : Sets the "Sample" (SM) field. This tags all reads as belonging 
+    #                      to a particular biological sample. Critical for multi-sample analysis.
+    #
+    # --rg PL:BGISEQ     : Sets the "Platform" (PL) field to BGISEQ, identifying the 
+    #                      sequencing technology (e.g., ILLUMINA, BGISEQ, IONTORRENT).
+    #
+    # Why this matters:
+    # Many downstream tools (e.g., samtools, GATK, RNA-seq QC tools) rely on read group
+    # information to track which reads came from which sample or sequencing platform.
+    # Without proper RG tags, joint analysis of multiple samples can fail or produce errors.
+#Those flags are adding read group (RG) metadata into the BAM file headers during alignment.
+
 PATH_hisat2=~/Tools/hisat2-2.2.1
 # ----------------------------
 # Loop over FASTQ files
