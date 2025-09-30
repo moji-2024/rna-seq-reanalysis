@@ -10,7 +10,7 @@ DATA_DIR="$SCRIPT_DIR/../data"
 
 INPUT_DIR="$DATA_DIR/raw/FastqFiles"
 OUTPUT_TRIMMED_DIR="$DATA_DIR/processed/trimmed"
-OUTPUT_HTML_REPORT_DIR="$DATA_DIR/processed/trimmed_report"
+OUTPUT_HTML_REPORT_DIR="$DATA_DIR/../results/trimmed_report"
 
 # make output directories
 mkdir -p "$OUTPUT_TRIMMED_DIR"
