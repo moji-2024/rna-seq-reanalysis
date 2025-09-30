@@ -19,8 +19,8 @@ mkdir -p "$INDEX_DIR"
 
 # Download SA salmon index
 URL=http://refgenomes.databio.org/v2/asset/hg38/salmon_partial_sa_index/archive?tag=default
-#wget --content-disposition -P "$INDEX_DIR" "$URL"
-#tar -xvzf $INDEX_DIR/salmon_partial_sa_index__default.tgz -C "$INDEX_DIR"
+wget --content-disposition -P "$INDEX_DIR" "$URL"
+tar -xvzf $INDEX_DIR/salmon_partial_sa_index__default.tgz -C "$INDEX_DIR"
 
 # Create output directory
 mkdir -p "$OUT_DIR"
