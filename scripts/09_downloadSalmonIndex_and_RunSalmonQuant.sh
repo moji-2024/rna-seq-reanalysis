@@ -66,7 +66,6 @@ echo "Starting Salmon quantification..."
 # Detect and run single-end (only if _2 pair not found)
 for fastqFile in "$FASTQ_DIR"/*.fastq.gz; do
     sample=$(basename "$fastqFile" .fastq.gz)
-    echo "▶ Single-end detected: $sample"
     echo "$OUT_DIR/$sample"
     salmon quant \
         -i "$INDEX_DIR/salmon_partial_sa_index" \
