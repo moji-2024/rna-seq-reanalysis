@@ -16,6 +16,55 @@ OUTPUT_HTML_REPORT_DIR="$DATA_DIR/../results/trimmed_report"
 mkdir -p "$OUTPUT_TRIMMED_DIR"
 mkdir -p "$OUTPUT_HTML_REPORT_DIR"
 
+# ------------------------------
+# Input / Output
+# ------------------------------
+
+# -i "$file"
+#   Input FASTQ file (raw reads).
+
+# -o "$OUTPUT_TRIMMED_DIR/trimmed_${base_name}.fastq.gz"
+#   Output FASTQ file after trimming, compressed as .gz.
+
+# ------------------------------
+# Quality thresholds
+# ------------------------------
+
+# --qualified_quality_phred 28
+#   Defines a base as "qualified" if its Phred quality score ≥ 28 (stricter than the default Q20).
+
+# --unqualified_percent_limit 40
+#   A read will be discarded if more than 40% of its bases are below Q28.
+
+# --length_required 40
+#   Discards reads shorter than 40 bp after trimming.
+
+# ------------------------------
+# Quality-based trimming
+# ------------------------------
+
+# --cut_mean_quality 20
+#   Uses a sliding window to trim low-quality regions: if the average quality drops below Q20, bases are removed.
+
+# --cut_front
+#   Trims low-quality bases from the 5′ (front) of the read.
+
+# --cut_tail
+#   Trims low-quality bases from the 3′ (tail) of the read.
+
+# --cut_right
+#   Iteratively trims the 3′ end until the mean quality threshold is satisfied.
+
+# ------------------------------
+# Reports
+# ------------------------------
+
+# -h "$OUTPUT_HTML_REPORT_DIR/${base_name}.html"
+#   Generates an HTML report (interactive, human-readable).
+
+# -j "$OUTPUT_HTML_REPORT_DIR/${base_name}.json"
+#   Generates a JSON report (machine-readable, for downstream parsing).
+
 
 # Loop through single-end FASTQ files
 for file in "$INPUT_DIR"/*.fastq.gz; do
