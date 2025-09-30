@@ -13,7 +13,7 @@ IDX=$SCRIPT_DIR/../GenomeIndexes/grch38_tran/genome_tran
 SS="$DATA_DIR/processed/raw/hints_for_spliced_alignment_DIR/splice_sites.txt"
 # folder with trimmed FASTQs
 FASTQ_DIR="$DATA_DIR/processed/trimmed"
-ALIGN_DIR="$DATA_DIR/processed/align"
+ALIGN_DIR="$DATA_DIR/processed/aligned"
 LOG_DIR="$DATA_DIR/processed/logs"
 mkdir -p $ALIGN_DIR $LOG_DIR
 
