@@ -16,10 +16,6 @@ Duplication ranged from **56.8% to 60.9%** — somewhat high, likely owing to si
 
 ### Trimming Summary
 
-<p align="center">
-  <img src="../../results/trimmed_report/Trim_stats.csv" alt="Per base sequence quality_KO_SRR13633857.png" width="600">
-</p>
-
 [Summary_info](../../results/trimmed_report/Trim_stats.csv)
 
 | Sample ID       | Reads Before | Reads After | Q30 Increase       | Adapters Trimmed |
