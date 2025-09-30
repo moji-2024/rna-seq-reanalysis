@@ -50,6 +50,21 @@ The raw `quant.sf` tables are not the end goal. They feed into downstream steps,
 - **Integration with metadata**: treatments, conditions → biological conclusions.  
 
 ---
+---
+
+# MultiQC Report Aggregation
+
+## Why MultiQC?
+RNA-seq pipelines generate a wide variety of logs and QC outputs (e.g., from alignment, quantification, trimming). **MultiQC** is a lightweight and modular tool that scans these outputs and compiles them into a single, interactive HTML report. This provides a **holistic quality assessment** across all samples in one place.
+
+- **Aggregates logs**: STAR / HISAT2 alignment rates, Salmon quant stats, FastQC reports, etc.  
+- **Cross-sample comparison**: Quickly spot outliers in read quality, mapping rate, duplication, or bias.  
+- **Reproducible reports**: Each run creates a timestamped HTML file for tracking.
+
+📌 **Case Study in this workflow**:  
+After quantification with **Salmon**, MultiQC was run across the processed data directory.  
+The generated report (`multiqc_YYYYMMDD.html`) is located in:  
+
 
 ## Summary
 - ✅ Chose **Salmon** for fast, accurate, and bias-aware transcript quantification.  
