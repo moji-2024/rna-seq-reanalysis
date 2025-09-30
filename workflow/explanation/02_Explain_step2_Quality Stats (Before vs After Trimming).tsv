@@ -13,3 +13,36 @@ KO_SRR13633859	28.17 M	27.40 M	91.61 → 92.74	0
 KO_SRR13633860	28.16 M	27.37 M	91.58 → 92.70	0
 WT_SRR13633855	28.19 M	27.44 M	91.94 → 92.99	0
 WT_SRR13633856	28.16 M	27.41 M	92.26 → 93.33	0
+
+
+
+## Common Observations
+
+✨ **High Quality Maintained**  
+Post-trimming **Q30 rates improved across all samples**, reaching above **92.7%**, which is excellent.  
+
+🧹 **Low Adapter Contamination**  
+Only one sample (**KO_SRR13633858**) had detectable adapter sequences.  
+
+📉 **Low Discard Rates**  
+Reads lost due to low quality or short length were minimal (**~2–3% total**).  
+
+🔁 **Duplication Rates**  
+Ranged from **56.8% to 60.9%**. This is relatively high, likely due to **single-end sequencing** and possibly high sequencing depth or low-complexity libraries.  
+
+---
+
+### Trimming Summary
+
+| **Sample ID**     | **Reads Before** | **Reads After** | **Q30% ↑**        | **Adapters Trimmed** |
+|-------------------|------------------|-----------------|-------------------|-----------------------|
+| KO_SRR13633857    | 28.17 M          | 27.29 M         | 91.75 → **92.94** | 0                     |
+| KO_SRR13633858    | 28.17 M          | 27.25 M         | 91.72 → **92.91** | 53,535                |
+| KO_SRR13633859    | 28.17 M          | 27.40 M         | 91.61 → **92.74** | 0                     |
+| KO_SRR13633860    | 28.16 M          | 27.37 M         | 91.58 → **92.70** | 0                     |
+| WT_SRR13633855    | 28.19 M          | 27.44 M         | 91.94 → **92.99** | 0                     |
+| WT_SRR13633856    | 28.16 M          | 27.41 M         | 92.26 → **93.33** | 0                     |
+
+---
+
+✅ Overall, trimming improved **base quality** while keeping **most reads intact**, ensuring the dataset is clean and ready for downstream analysis.
