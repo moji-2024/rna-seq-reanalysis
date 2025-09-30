@@ -24,7 +24,6 @@ Salmon supports two flavors of the selective alignment (SA) index:
 👉 For this study, the **partial SA index** was selected because:
 
 - Dataset is **bulk RNA-seq** with standard read lengths.  
-- Goal is **gene-level expression analysis**, not isoform disambiguation.  
 - Partial index is **lighter, faster, and accurate enough** for typical mRNA profiling tasks.  
 - Saves significant **computational resources** while retaining robust quantification.  
 
