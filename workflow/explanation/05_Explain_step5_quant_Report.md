@@ -74,7 +74,7 @@ This step provides a **global snapshot of sequencing and quantification quality*
 
 📌 **Case Study in this workflow**:  
 After quantification with **Salmon**, MultiQC was run across the processed data directory.  
-The generated report (`multiqc_YYYYMMDD.html`) is located in:  
+The generated report (`multiqc_YYYYMMDD.html`) is located in:  [Summary_info](../../results/multiqc_results/multiqc_20250929.html)
 
 
 
