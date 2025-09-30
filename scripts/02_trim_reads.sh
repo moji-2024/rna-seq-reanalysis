@@ -85,4 +85,33 @@ for file in "$INPUT_DIR"/*.fastq.gz; do
 done
 echo "All trimming completed."
 echo "Trimmed FASTQ files are in:     $OUTPUT_TRIMMED_DIR"
-echo "Fastp HTML/JSON reports are in: $OUTPUT_HTML_REPORT_DIR"
+
+# Create trim table summary
+python - <<EOF
+import json
+import os
+import pandas as pd
+df_data= {'Sample':[],'ReadsBefore':[],'ReadsAfter':[],'Q30_or_higherPrecentage_Before':[],'Q30_or_higherPrecentage_After':[],'AdaptersTrimmed':[]}
+for file in os.listdir("$OUTPUT_HTML_REPORT_DIR"):
+  if file.endswith('.json'):
+    print(file)
+    with open(os.path.join("$OUTPUT_HTML_REPORT_DIR",file)) as f:
+        trim_data = json.load(f)
+    summaryTimData = trim_data['summary']
+    df_data['Sample'].append(file.replace(".json",""))
+    df_data['ReadsBefore'].append(summaryTimData['before_filtering']["total_reads"])
+    df_data['ReadsAfter'].append(summaryTimData['after_filtering']["total_reads"])
+    df_data['Q30_or_higherPrecentage_Before'].append(round(summaryTimData['before_filtering']["q30_rate"] * 100,2))
+    df_data['Q30_or_higherPrecentage_After'].append(round(summaryTimData['after_filtering']["q30_rate"] * 100,2))
+    try:
+      df_data['AdaptersTrimmed'].append(trim_data["adapter_cutting"]["adapter_trimmed_reads"])
+    except KeyError:
+      df_data['AdaptersTrimmed'].append(0)
+df = pd.DataFrame(df_data)
+df['ReadsBefore'] = (df['ReadsBefore'] / 1e6).round(2).astype(str) + " M"
+df['ReadsAfter'] = (df['ReadsAfter'] / 1e6).round(2).astype(str) + " M"
+df['Q30_or_higherPrecentage_Before'] = df['Q30_or_higherPrecentage_Before'].astype(str) + "%"
+df['Q30_or_higherPrecentage_After'] = df['Q30_or_higherPrecentage_After'].astype(str) + "%"
+df.to_csv("$OUTPUT_HTML_REPORT_DIR/Trim_stats.csv")
+EOF
+echo "Fastp HTML/JSON and Summary table reports are in: $OUTPUT_HTML_REPORT_DIR"
