@@ -1,0 +1,13 @@
+{
+    "salmon_version": "1.10.3",
+    "index": "/home/moji-lin/rna-seq-reanalysis/scripts/../SalmonIndexes/salmon_partial_sa_index",
+    "libType": "U",
+    "unmatedReads": "/home/moji-lin/rna-seq-reanalysis/scripts/../data/processed/trimmed/trimmed_WT_SRR13633856.fastq.gz",
+    "threads": "8",
+    "output": "/home/moji-lin/rna-seq-reanalysis/scripts/../data/processed/quant_results/trimmed_WT_SRR13633856",
+    "validateMappings": [],
+    "gcBias": [],
+    "seqBias": [],
+    "useVBOpt": [],
+    "auxDir": "aux_info"
+}
