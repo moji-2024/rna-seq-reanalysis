@@ -1,11 +1,11 @@
-#Common Observations
-#High Quality Maintained: Post-trimming Q30 rates improved across all samples, reaching above 92.7%, which is excellent.
+## Common Observations
+# High Quality Maintained: Post-trimming Q30 rates improved across all samples, reaching above 92.7%, which is excellent.
 
-#Low Adapter Contamination: Only one sample (KO_SRR13633858) had detectable adapter sequences.
+# Low Adapter Contamination: Only one sample (KO_SRR13633858) had detectable adapter sequences.
 
-#Low Discard Rates: Reads lost due to low quality or being too short were minimal (~2–3% total).
+# Low Discard Rates: Reads lost due to low quality or being too short were minimal (~2–3% total).
 
-#Duplication Rates: Ranged from 56.8% to 60.9%. This is relatively high, likely due to single-end sequencing and possibly high sequencing depth or low-complexity libraries.
+# Duplication Rates: Ranged from 56.8% to 60.9%. This is relatively high, likely due to single-end sequencing and possibly high sequencing depth or low-complexity libraries.
 Sample_ID	Reads_Before	Reads_After	Q30_%_↑	Adapters_Trimmed
 KO_SRR13633857	28.17 M	27.29 M	91.75 → 92.94	0
 KO_SRR13633858	28.17 M	27.25 M	91.72 → 92.91	53,535
