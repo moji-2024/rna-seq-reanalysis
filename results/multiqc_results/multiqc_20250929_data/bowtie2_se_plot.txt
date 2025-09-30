@@ -1,0 +1,7 @@
+Sample	SE mapped uniquely	SE multimapped	SE not aligned
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633857 | trimmed_KO_SRR13633857	24401408.0	2440689.0	452098.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633858 | trimmed_KO_SRR13633858	24374839.0	2360082.0	514717.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633859 | trimmed_KO_SRR13633859	24533723.0	2425212.0	443260.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633860 | trimmed_KO_SRR13633860	24608334.0	2318121.0	439523.0
+processed | Bam_related_logs | logs_trimmed_WT_SRR13633855 | trimmed_WT_SRR13633855	24428420.0	2585984.0	423689.0
+processed | Bam_related_logs | logs_trimmed_WT_SRR13633856 | trimmed_WT_SRR13633856	24224367.0	2737941.0	450824.0

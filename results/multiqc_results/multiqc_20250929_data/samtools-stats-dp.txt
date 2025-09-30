@@ -1,0 +1,7 @@
+Sample	Total sequences	Mapped &amp; paired	Properly paired	Duplicated	QC Failed	Reads MQ0	Mapped bases (CIGAR)	Bases Trimmed	Duplicated bases	Diff chromosomes	Other orientation	Inward pairs	Outward pairs
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633857 | trimmed_KO_SRR13633857	27.294195	0.0	0.0	0.0	0.0	0.09447699999999999	1338.355554	0.0	0.0	0.0	0.0	0.0	0.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633858 | trimmed_KO_SRR13633858	27.249637999999997	0.0	0.0	0.0	0.0	0.09768199999999999	1332.7254659999999	0.0	0.0	0.0	0.0	0.0	0.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633859 | trimmed_KO_SRR13633859	27.402195	0.0	0.0	0.0	0.0	0.10135899999999999	1344.520213	0.0	0.0	0.0	0.0	0.0	0.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633860 | trimmed_KO_SRR13633860	27.365978	0.0	0.0	0.0	0.0	0.101006	1342.7588739999999	0.0	0.0	0.0	0.0	0.0	0.0
+processed | Bam_related_logs | logs_trimmed_WT_SRR13633855 | trimmed_WT_SRR13633855	27.438093	0.0	0.0	0.0	0.0	0.097762	1347.1671489999999	0.0	0.0	0.0	0.0	0.0	0.0
+processed | Bam_related_logs | logs_trimmed_WT_SRR13633856 | trimmed_WT_SRR13633856	27.413131999999997	0.0	0.0	0.0	0.0	0.111119	1344.55456	0.0	0.0	0.0	0.0	0.0	0.0

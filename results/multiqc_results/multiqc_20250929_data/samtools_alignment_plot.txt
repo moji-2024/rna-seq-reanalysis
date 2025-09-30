@@ -1,0 +1,7 @@
+Sample	Mapped (with MQ>0)	MQ0	Unmapped
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633857 | trimmed_KO_SRR13633857	26747620.0	94477.0	452098.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633858 | trimmed_KO_SRR13633858	26637239.0	97682.0	514717.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633859 | trimmed_KO_SRR13633859	26857576.0	101359.0	443260.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633860 | trimmed_KO_SRR13633860	26825449.0	101006.0	439523.0
+processed | Bam_related_logs | logs_trimmed_WT_SRR13633855 | trimmed_WT_SRR13633855	26916642.0	97762.0	423689.0
+processed | Bam_related_logs | logs_trimmed_WT_SRR13633856 | trimmed_WT_SRR13633856	26851189.0	111119.0	450824.0

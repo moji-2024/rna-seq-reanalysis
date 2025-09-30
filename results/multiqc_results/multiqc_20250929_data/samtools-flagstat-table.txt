@@ -1,0 +1,7 @@
+Sample	Total Reads	Total Passed QC	Mapped	Secondary Alignments	Duplicates	Paired in Sequencing	Properly Paired	Self and mate mapped	Singletons	Mate mapped to diff chr	Diff chr (mapQ >= 5)
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633857 | trimmed_KO_SRR13633857	32.856209	32.856209	32.404111	5.562014	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633858 | trimmed_KO_SRR13633858	32.867773	32.867773	32.353055999999995	5.618135	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633859 | trimmed_KO_SRR13633859	32.86947	32.86947	32.42621	5.467275	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633860 | trimmed_KO_SRR13633860	32.808606	32.808606	32.369082999999996	5.442628	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+processed | Bam_related_logs | logs_trimmed_WT_SRR13633855 | trimmed_WT_SRR13633855	33.611083	33.611083	33.187394	6.1729899999999995	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+processed | Bam_related_logs | logs_trimmed_WT_SRR13633856 | trimmed_WT_SRR13633856	34.119702	34.119702	33.668878	6.706569999999999	0.0	0.0	0.0	0.0	0.0	0.0	0.0

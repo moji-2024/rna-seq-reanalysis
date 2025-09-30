@@ -1,0 +1,19 @@
+Sample	samtools_stats-error_rate	samtools_stats-non_primary_alignments	samtools_stats-reads_mapped	samtools_stats-reads_mapped_percent	samtools_stats-reads_properly_paired_percent	samtools_stats-reads_MQ0_percent	samtools_stats-raw_total_sequences	samtools_stats-insert_size_average	samtools_flagstat-flagstat_total	samtools_flagstat-mapped_passed	samtools_flagstat-mapped_passed_pct	bowtie_2_hisat2-overall_alignment_rate	salmon-percent_mapped	salmon-num_mapped	salmon-library_types	salmon-compatible_fragment_ratio	salmon-strand_mapping_bias
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633857 | trimmed_KO_SRR13633857	0.1475727	5.562014	26.842097	98.34361115980889	0.0	0.34614320004674987	27.294195	0.0	32.856209	32.404111	98.62	98.34					
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633858 | trimmed_KO_SRR13633858	0.151956	5.618135	26.734921	98.11110518238812	0.0	0.35847081711691	27.249637999999997	0.0	32.867773	32.353055999999995	98.43	98.11					
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633859 | trimmed_KO_SRR13633859	0.1496811	5.467275	26.958935	98.3823923594442	0.0	0.3698937256668672	27.402195	0.0	32.86947	32.42621	98.65	98.38					
+processed | Bam_related_logs | logs_trimmed_KO_SRR13633860 | trimmed_KO_SRR13633860	0.15366449999999998	5.442628	26.926454999999997	98.39390720843231	0.0	0.3690933318736133	27.365978	0.0	32.808606	32.369082999999996	98.66	98.39					
+processed | Bam_related_logs | logs_trimmed_WT_SRR13633855 | trimmed_WT_SRR13633855	0.1428728	6.1729899999999995	27.014404	98.45583656269406	0.0	0.3563002720342117	27.438093	0.0	33.611083	33.187394	98.74	98.46					
+processed | Bam_related_logs | logs_trimmed_WT_SRR13633856 | trimmed_WT_SRR13633856	0.1498293	6.706569999999999	26.962308	98.35544512024383	0.0	0.40534952372461486	27.413131999999997	0.0	34.119702	33.668878	98.68	98.36					
+processed | quant_results | trimmed_KO_SRR13633857 | trimmed_KO_SRR13633857																100.0	0.5031860955161356
+processed | quant_results | trimmed_KO_SRR13633858 | trimmed_KO_SRR13633858																100.0	0.5023593573699379
+processed | quant_results | trimmed_KO_SRR13633859 | trimmed_KO_SRR13633859																100.0	0.5029538434764168
+processed | quant_results | trimmed_KO_SRR13633860 | trimmed_KO_SRR13633860																100.0	0.5030847771049467
+processed | quant_results | trimmed_WT_SRR13633855 | trimmed_WT_SRR13633855																100.0	0.5041561693058273
+processed | quant_results | trimmed_WT_SRR13633856 | trimmed_WT_SRR13633856																100.0	0.5033744165889055
+quant_results | trimmed_KO_SRR13633857 | aux_info | trimmed_KO_SRR13633857													94.46377517270614	25.783127	U		
+quant_results | trimmed_KO_SRR13633858 | aux_info | trimmed_KO_SRR13633858													93.77784761764542	25.554123999999998	U		
+quant_results | trimmed_KO_SRR13633859 | aux_info | trimmed_KO_SRR13633859													94.28396520789667	25.835876	U		
+quant_results | trimmed_KO_SRR13633860 | aux_info | trimmed_KO_SRR13633860													93.90324365531538	25.697540999999998	U		
+quant_results | trimmed_WT_SRR13633855 | aux_info | trimmed_WT_SRR13633855													94.51635724100797	25.933486	U		
+quant_results | trimmed_WT_SRR13633856 | aux_info | trimmed_WT_SRR13633856													92.96722826125814	25.485229	U		
