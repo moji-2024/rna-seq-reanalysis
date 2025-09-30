@@ -61,9 +61,21 @@ RNA-seq pipelines generate a wide variety of logs and QC outputs (e.g., from ali
 - **Cross-sample comparison**: Quickly spot outliers in read quality, mapping rate, duplication, or bias.  
 - **Reproducible reports**: Each run creates a timestamped HTML file for tracking.
 
+## What MultiQC Produced
+
+The uploaded HTML file contains:
+
+- **Summary statistics**: Alignment rates, mapping efficiency, duplication levels.  
+- **Sample-by-sample QC plots**: Read quality distributions, GC content, sequence length.  
+- **Warnings/flags**: Highlighting any samples with unusually low quality or poor alignment.  
+
+This step provides a **global snapshot of sequencing and quantification quality**, ensuring confidence before downstream analysis (e.g., **DESeq2**, **pathway enrichment**).
+
+
 📌 **Case Study in this workflow**:  
 After quantification with **Salmon**, MultiQC was run across the processed data directory.  
 The generated report (`multiqc_YYYYMMDD.html`) is located in:  
+
 
 
 ## Summary
