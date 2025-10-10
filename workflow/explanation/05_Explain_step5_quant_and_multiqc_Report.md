@@ -80,7 +80,8 @@ The file has **5 columns**:
 ### 🔹 3. **EffectiveLength**
 - The **usable transcript length for read placement**, i.e. the number of positions inside the transcript where a read of the observed length distribution could start and still fit entirely within the transcript.
 **Example:**
-` | Transcript Length | Avg Fragment | EffectiveLength |
+`  
+| Transcript Length | Avg Fragment | EffectiveLength |
 |------------------|--------------|-----------------|
 | 2000 bp          | 200 bp       | 1801 bp         |
 `
