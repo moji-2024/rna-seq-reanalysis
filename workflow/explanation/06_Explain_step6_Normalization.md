@@ -1,5 +1,5 @@
 txi object structure
-names(txi)
+`names(txi)
 # [1] "abundance" "counts" "length" "countsFromAbundance"
 
 ## 1. abundance
