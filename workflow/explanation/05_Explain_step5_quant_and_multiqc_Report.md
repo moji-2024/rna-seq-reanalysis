@@ -118,7 +118,7 @@ The file has **5 columns**:
   - In RNA-seq, some reads align uniquely to one transcript.
   → Easy: those reads are assigned fully to that transcript (count = 1).
   - many reads align equally well to multiple transcripts (e.g., isoforms of the same gene that share exons).
-  → Ambiguous: we don’t know exactly which transcript they came from. (count = 1/number of those transcripts)
+  → Ambiguous: we don’t know exactly which transcript they came from. (count = 1/number of those transcripts, for each transcript)
 - Used by **tximport → DESeq2** for gene-level DE analysis
 
 ---
