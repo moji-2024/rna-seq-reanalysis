@@ -90,6 +90,39 @@ The file has **5 columns**:
 
 ---
 
+---
+
+### 🔹 4. **TPM (Transcripts Per Million)**
+- Normalized transcript abundance  
+- Comparable **within** a sample
+
+**TPM Calculation Steps:**
+1. Compute **RPK** (Reads per Kilobase):  
+   `RPK = NumReads / (EffectiveLength / 1000)`
+2. Scale so total RPKs = **1,000,000**
+
+**Example:**
+
+| Transcript | Reads | EffLength | RPK  | TPM (scaled) |
+|------------|--------|----------|------|--------------|
+| A          | 200    | 1901     | ≈105 | 296,800      |
+| B          | 100    | 401      | ≈249 | 703,200      |
+
+> Even if A has more reads — B has higher TPM due to shorter length.
+
+---
+
+### 🔹 5. **NumReads**
+- Estimated reads assigned to the transcript  
+- Can be fractional (e.g., `123.5`)
+  - In RNA-seq, some reads align uniquely to one transcript.
+  → Easy: those reads are assigned fully to that transcript (count = 1).
+  - many reads align equally well to multiple transcripts (e.g., isoforms of the same gene that share exons).
+  → Ambiguous: we don’t know exactly which transcript they came from. (count = 1/number of those transcripts)
+- Used by **tximport → DESeq2** for gene-level DE analysis
+
+---
+
 ## Downstream Analysis
 The raw `quant.sf` tables are not the end goal. They feed into downstream steps, typically via **tximport in R**, which aggregates transcript-level estimates into **gene-level counts**. From there:
 
