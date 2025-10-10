@@ -82,11 +82,11 @@ The file has **5 columns**:
 
 **Example:**
 
-`  
+
 | Transcript Length | Avg Fragment | EffectiveLength |
 |------------------|--------------|-----------------|
 | 2000 bp          | 200 bp       | 1801 bp         |
-`
+
 
 ---
 
