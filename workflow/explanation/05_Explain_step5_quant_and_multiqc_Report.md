@@ -73,7 +73,7 @@ The file has **5 columns**:
 - The total number of nucleotides in the reference transcript sequence as defined in the transcriptome FASTA/GTF used to build the Salmon index.
 - This value is fixed for each transcript and does not depend on the sequencing reads.
 
-**Example:** `if transcript ENST00000456328.2 has 2000 bases in the Ensembl GRCh38 reference, then Length = 2000.
+**Example:** `if transcript ENST00000456328.2 has 2000 bases in the Ensembl GRCh38 reference, then Length = 2000.`
 
 ---
 
