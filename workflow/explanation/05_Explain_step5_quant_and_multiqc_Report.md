@@ -39,6 +39,48 @@ Running `salmon quant` on each sample created a directory (one per sample) conta
 
 These outputs provide **transcript-level abundance estimates** across all samples.
 
+## 🧬 Understanding `quant.sf` from **Salmon**
+
+When you run **Salmon**, each sample generates a folder containing a file called **`quant.sf`**.  
+This file contains **transcript-level quantification results**, where **each row = one transcript**.
+
+---
+
+## 📂 File Structure
+
+The file has **5 columns**:
+
+| Column           | Description                               |
+|------------------|-------------------------------------------|
+| **Name**         | Transcript ID                             |
+| **Length**       | Full transcript length (nt)               |
+| **EffectiveLength** | Adjusted length used for normalization  |
+| **TPM**          | Transcripts Per Million                   |
+| **NumReads**     | Estimated number of reads                 |
+
+---
+
+## 📖 Column Details
+
+### 🔹 1. **Name**
+- Transcript identifier (e.g., `ENST00000456328.2`)
+- Comes from reference **FASTA/GTF**
+- Used to map transcripts → genes (`tx2gene`)
+
+---
+
+### 🔹 2. **Length**
+- Full nucleotide length of the transcript  
+  **Example:** `Length = 2000` (for a 2000 bp transcript)
+
+---
+
+### 🔹 3. **EffectiveLength**
+- Adjusted transcript length used for normalization  
+- Accounts for valid fragment placement and bias corrections
+
+**Formula:**
+
 ---
 
 ## Downstream Analysis
