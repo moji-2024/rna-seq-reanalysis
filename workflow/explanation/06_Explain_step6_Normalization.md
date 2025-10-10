@@ -1,6 +1,6 @@
 txi object structure
 `names(txi)
-# [1] "abundance" "counts" "length" "countsFromAbundance"
+# [1] "abundance" "counts" "length" "countsFromAbundance"`
 
 ## 1. abundance
 
