@@ -29,10 +29,11 @@ This repository contains a reproducible pipeline for reanalyzing RNA-seq data fr
 - `samtools version 1.10`
 - `fastqc version v0.11.9`
 - `fastp version 0.22.0`
-- `HISAT2 version 2.2.1 `
+- `HISAT2 version `
 - `featureCounts` / `HTSeq`
 - `DESeq2`
-- `matplotlib`, `seaborn`, `ggplot2`
+- `matplotlib`, `seaborn`, pandas
+- `ggplot2`
 
 ###  Install Required Tools and Libraries
 ```bash
