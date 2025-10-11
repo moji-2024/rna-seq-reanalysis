@@ -1,32 +1,51 @@
 Abstract:
 -	The goal of this study is to use RNA-sequencing to profile the transcriptional changes in HT-29 cells with ING3 deficiency. Specifically, we were interested in 	determining the IFN and ISGs in response to ING3 KO. Several ISGs including IFI44L and IFITM1 were up-regulated in ING3 KO HT-29 cells, indicating that the broad 	resistance to virus infection in ING3 KO cells were mediated by heightened IFN and ISG responses. Overall design: mRNA profiles of WT and ING3 KO HT-29 cells were 	analyzed by bulk RNA-sequencing We used one sgRNA to knockout ING3 in HT-29 cells, then we subcloned the HT-29-ING3 KO cells. #1 and #2 mean different subclones 	of HT-29-ING3 KO cells.
+
 Overall design:
 -	mRNA profiles of WT and ING3 KO HT-29 cells were analyzed by bulk RNA-sequencing
 We used one sgRNA to knockout ING3 in HT-29 cells, then we subcloned the HT-29-ING3 KO cells. #1 and #2 mean different subclones of HT-29-ING3 KO cells.
 SRA: SRP304782
+
 BioProject: PRJNA699603
+
 GEO: GSE166219
 
 article name:
-  Inhibitor of growth protein 3 epigenetically silences endogenous retroviral elements and prevents innate immune activation 
+-  Inhibitor of growth protein 3 epigenetically silences endogenous retroviral elements and prevents innate immune activation 
+
 PMCID: PMC8682784  PMID: 34791430
 
-BioProject	PRJNA699603
-Consent	public
-Assay Type	RNA-Seq
-AvgSpotLen	50
-cell_line	colonic epithelial cell line HT-29
-Center Name	GEO
-DATASTORE filetype	fastq, run.zq, sra
-DATASTORE provider	gs, ncbi, s3
-DATASTORE region	gs.us-east1, ncbi.public, s3.us-east-1
-Instrument	BGISEQ-500 
-LibraryLayout	SINGLE
-LibrarySelection	cDNA
-LibrarySource	TRANSCRIPTOMIC
-LibrarySize	Medium (28.0 M)
-Organism	Homo sapiens
-Platform	BGISEQ
-ReleaseDate	2021-08-06
-version	1
-SRA Study	SRP304782
+BioProject:	PRJNA699603
+
+Consent:	public
+
+Assay Type:	RNA-Seq
+
+AvgSpotLen:	50
+
+cell_line:	colonic epithelial cell line HT-29
+
+Center Name:	GEO
+
+DATASTORE filetype:	fastq, run.zq, sra
+
+DATASTORE provider:	gs, ncbi, s3
+
+DATASTORE region:	gs.us-east1, ncbi.public, s3.us-east-1
+
+Instrument:	BGISEQ-500 
+
+LibraryLayout:	SINGLE
+
+LibrarySelection:	cDNA
+
+LibrarySource:	TRANSCRIPTOMIC
+
+LibrarySize:	Medium (28.0 M)
+
+Organism:	Homo sapiens
+
+Platform:	BGISEQ
+ReleaseDate:	2021-08-06
+version:	1
+SRA Study:	SRP304782
