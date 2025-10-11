@@ -1,4 +1,4 @@
-# txi object structure
+# 1) txi object structure
 
 names(txi)
 `[1] "abundance" "counts" "length" "countsFromAbundance"`
@@ -49,3 +49,104 @@ This choice matters: it controls whether you want your counts corrected for tran
 For DESeq2 gene-level DE: "lengthScaledTPM" is often recommended.
 
 For isoform-level analysis: "no" or "dtuScaledTPM" may be preferred.
+
+# 2) DESeq2 
+
+## 1. Design formula
+
+In DESeq2, the **design formula** tells R what explains the differences in gene expression.
+Example: **design = ~ condition** means “find genes whose expression changes with condition.”
+if there’s another source of variation, like batch, subclone, or sex, you must include it: **design = ~ batch + condition**
+→ This way, DESeq2 first removes batch effects, then tests condition.
+
+## 🌱 Step 1. The purpose of design
+In DESeq2, (**dds <- DESeqDataSetFromTximport(txi, colData = coldata, design = ~ ...)**) the **design formula** tells DESeq2 what factor(s) explain expression differences between samples.
+It determines which comparisons (contrasts; Example: WT vers KO), DESeq2 makes and how it accounts for unwanted variation.
+## 🌿 Step 2. The logic of factors
+Each column in  **colData** table describes an experimental variable:
+| Example column | What it represents                                | Example values |
+| -------------- | ------------------------------------------------- | -------------- |
+| `condition`    | main biological question                          | WT, KO         |
+| `batch`        | technical source of variation                     | batch1, batch2 |
+| `replicate`    | sample identity (for tracking, not used directly) | 1, 2, 3        |
+| `subclone`     | biological variation between clones               | clone1, clone2 |
+## 🌳 Step 3. Major scenarios
+### Scenario 1 – Simple comparison
+**design = ~ condition**
+Example colData:
+| sample | condition |
+| ------ | --------- |
+| WT_1   | WT        |
+| WT_2   | WT        |
+| KO_1   | KO        |
+| KO_2   | KO        |
+### Scenario 2 – Add batch effect
+Example colData:
+| sample | condition | batch |
+| ------ | --------- | ----- |
+| WT_1   | WT        | 1     |
+| WT_2   | WT        | 2     |
+| KO_1   | KO        | 1     |
+| KO_2   | KO        | 2     |
+### Scenario 3 – Subclones or donors
+Suppose you have two independent clones of KO cells (biological replicates)
+You want to test if **KO vs WT** has a consistent effect across clones.
+**design = ~ subclone + condition**
+Example colData:
+| sample | condition | subclone |
+| ------ | --------- | -------- |
+| WT_1   | WT        | clone1   |
+| WT_2   | WT        | clone2   |
+| KO_1   | KO        | clone1   |
+| KO_2   | KO        | clone2   |
+### Scenario 4 – Interaction design
+Used when you want to test whether the effect of one variable (e.g., condition)
+If you want to know whether the KO effect is different in each clone
+`design = ~ subclone + condition + subclone:condition
+| sample    | condition | subclone |
+| --------- | --------- | -------- |
+| WT_sub1_1 | WT        | sub1     |
+| WT_sub1_2 | WT        | sub1     |
+| KO_sub1_1 | KO        | sub1     |
+| KO_sub1_2 | KO        | sub1     |
+| WT_sub2_1 | WT        | sub2     |
+| WT_sub2_2 | WT        | sub2     |
+| KO_sub2_1 | KO        | sub2     |
+| KO_sub2_2 | KO        | sub2     |
+
+**Simpler alternative (combined factor)** → Instead of adding an interaction term, you can combine both factors into one variable. 
+group = subcloneCondition
+**design = ~ group**
+| **sample** | **group** |
+| ---------- | --------- |
+| WT_sub1_1  | sub1_WT   |
+| WT_sub1_2  | sub1_WT   |
+| KO_sub1_1  | sub1_KO   |
+| KO_sub1_2  | sub1_KO   |
+| WT_sub2_1  | sub2_WT   |
+| WT_sub2_2  | sub2_WT   |
+| KO_sub2_1  | sub2_KO   |
+| KO_sub2_2  | sub2_KO   |
+
+### Scenario 5 – Technical replicates
+Note: Technical replicates (same RNA sample, sequenced twice) are not independent.
+You should merge them before DESeq2, because they represent the same biological sample.
+`txi.sum <- summarizeToGene(txi)
+txi.sum$counts <- collapseReplicates(txi.sum$counts, group=sampleIDs)
+## 🌾 Step 4. Building colData correctly
+- 1. Each row = one biological sample.
+
+- 2. Each column = one variable in the design.
+
+- 3. Levels of categorical variables should be factors:
+`coldata$condition <- factor(coldata$condition, levels = c("WT", "KO"))
+coldata$batch <- factor(coldata$batch)
+coldata$subclone <- factor(coldata$subclone)
+| sample | condition | subclone | batch  |
+| ------ | --------- | -------- | ------ |
+| WT_A_1 | WT        | clone1   | batch1 |
+| WT_A_2 | WT        | clone2   | batch2 |
+| KO_B_1 | KO        | clone1   | batch1 |
+| KO_B_2 | KO        | clone2   | batch2 |
+`design = ~ batch + subclone + condition
+
