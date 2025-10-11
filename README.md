@@ -74,6 +74,17 @@ wget https://github.com/conda-forge/miniforge/releases/download/24.11.3-2/Minifo
 bash Miniforge3-24.11.3-2-Linux-x86_64.sh
 
 conda create -n rnaseq-tools fastp=0.22.0 qualimap=2.2.2a rseqc=5.0.1 gxf2bed=0.2.7 multiqc=1.30 bedtools mashmap -c conda-forge -c bioconda -c defaults -y
+conda create -n rnaseq-tools2 -y -c conda-forge -c bioconda \
+  r-base=4.3.* \
+  r-readr r-dplyr r-ggplot2 r-tibble r-stringr r-matrix r-mass r-jsonlite \
+  bioconductor-biocparallel \
+  bioconductor-deseq2=1.40.* \
+  bioconductor-tximport=1.30.* \
+  bioconductor-apeglm=1.22.* \
+  bioconductor-summarizedexperiment=1.30.* \
+  bioconductor-delayedarray=0.26.* \
+  bioconductor-s4arrays=1.0.* \
+  bioconductor-sparsearray=1.0.*
 ```
 ## Getting Started
 #Run below codes in your terminal:
