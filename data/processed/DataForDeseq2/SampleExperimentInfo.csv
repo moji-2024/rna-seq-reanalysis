@@ -1,8 +1,0 @@
-
-sample,condition,file
-trimmed_KO_SRR13633857,KO,/home/moji-lin/rna-seq-reanalysis/data/processed/quant_results/trimmed_KO_SRR13633857/quant.sf
-trimmed_KO_SRR13633858,KO,/home/moji-lin/rna-seq-reanalysis/data/processed/quant_results/trimmed_KO_SRR13633858/quant.sf
-trimmed_KO_SRR13633859,KO,/home/moji-lin/rna-seq-reanalysis/data/processed/quant_results/trimmed_KO_SRR13633859/quant.sf
-trimmed_KO_SRR13633860,KO,/home/moji-lin/rna-seq-reanalysis/data/processed/quant_results/trimmed_KO_SRR13633860/quant.sf
-trimmed_WT_SRR13633855,WT,/home/moji-lin/rna-seq-reanalysis/data/processed/quant_results/trimmed_WT_SRR13633855/quant.sf
-trimmed_WT_SRR13633856,WT,/home/moji-lin/rna-seq-reanalysis/data/processed/quant_results/trimmed_WT_SRR13633856/quant.sf
