@@ -166,4 +166,5 @@ Example colData:
 
 # 3) DESeq2 summaries
 [DESeq2_summary_result_KO1](../../data/processed/normalCountByDeseq2_DIR/DESeq2_summary_result_KO1.txt)
+
 [DESeq2_summary_result_KO2](../../data/processed/normalCountByDeseq2_DIR/DESeq2_summary_result_KO1.txt)
