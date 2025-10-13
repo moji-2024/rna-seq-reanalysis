@@ -75,15 +75,18 @@ echo "normal count data is located in $OUT_DIR"
 #Note about tximport: countsFromAbundance = "lengthScaledTPM" means ;
 #counts adjusted using average transcript lengths (recommended for DESeq2).
 
-# Note about transcript mismatches:
-# The `salmon_partial_sa_index` is not a full transcriptome index.
-# It is a partial selective-alignment index that only includes a subset
-# of transcripts (e.g., canonical or collapsed sequences).
+# Note1 about transcript mismatches:
+# - The `salmon_partial_sa_index` is not a full transcriptome index.
+# - It is a partial selective-alignment index that only includes a subset
+#   of transcripts (e.g., canonical or collapsed sequences).
 #
-# The matching `ensembl_gtf` file, however, contains the full Ensembl
-# annotation with all transcripts and all biotypes.
-#
-# Therefore, when building tx2gene from the GTF, we get more transcript IDs
-# than Salmon actually used. These extra IDs in tx2gene will not be present
-# in the quant.sf files, which leads to the "transcripts missing from tx2gene"
-# message in tximport.
+# - The matching `ensembl_gtf` file, however, contains the full Ensembl
+#   annotation with all transcripts and all biotypes.
+#   Therefore, when building tx2gene from the GTF, we get more transcript IDs
+#   than Salmon actually used. These extra IDs in tx2gene will not be present
+#   in the quant.sf files, which leads to the "transcripts missing from tx2gene"
+#   message in tximport.
+
+# Note2:
+# - tximport result has 4 attributes in which formats of abundance, counts, and length is matrix. keep in mind if you wish change them,
+#   because it result in DESeqDataSetFromTximport must preseved the format.
