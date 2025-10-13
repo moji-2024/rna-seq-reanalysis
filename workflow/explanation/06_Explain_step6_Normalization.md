@@ -75,7 +75,9 @@ Each column in  **colData** table describes an experimental variable:
 **Note: At least two biological replicate for each condition is needed**
 
 ### Scenario 1 – Simple comparison
-**design = ~ condition**
+
+`design = ~ condition`
+
 Example colData:
 | sample | condition |
 | ------ | --------- |
