@@ -4,6 +4,22 @@ Abstract:
 Overall design:
 -	mRNA profiles of WT and ING3 KO HT-29 cells were analyzed by bulk RNA-sequencing
 We used one sgRNA to knockout ING3 in HT-29 cells, then we subcloned the HT-29-ING3 KO cells. #1 and #2 mean different subclones of HT-29-ING3 KO cells.
+From the GEO Series entry (GSE166219):
+
+6 samples listed:
+
+HT-29 WT #1 replicate 1 — GSM5066133 
+
+HT-29 WT #1 replicate 2 — GSM5066134 
+
+HT-29 ING3 KO subclone #1 replicate 1 — GSM5066135 
+
+HT-29 ING3 KO subclone #1 replicate 2 — GSM5066136 
+
+HT-29 ING3 KO subclone #2 replicate 1 — GSM5066137 
+
+HT-29 ING3 KO subclone #2 replicate 2 — GSM5066138 
+
 SRA: SRP304782
 
 BioProject: PRJNA699603
