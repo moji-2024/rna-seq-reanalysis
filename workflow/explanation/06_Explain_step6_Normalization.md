@@ -71,6 +71,9 @@ Each column in  **colData** table describes an experimental variable:
 | `replicate`    | sample identity (for tracking, not used directly) | 1, 2, 3        |
 | `subclone`     | biological variation between clones               | clone1, clone2 |
 ## 🌳 Step 3. Major scenarios
+
+**Note: At least two biological replicate for each condition is needed**
+
 ### Scenario 1 – Simple comparison
 **design = ~ condition**
 Example colData:
@@ -86,8 +89,9 @@ Example colData:
 | ------ | --------- | ----- |
 | WT_1   | WT        | 1     |
 | WT_2   | WT        | 2     |
-| KO_1   | KO        | 1     |
+| KO_1   | KO        | 2     |
 | KO_2   | KO        | 2     |
+| KO_2   | KO        | 1     |
 ### Scenario 3 – Subclones or donors
 Suppose you have two independent clones of KO cells (biological replicates)
 You want to test if **KO vs WT** has a consistent effect across clones.
@@ -99,20 +103,19 @@ Example colData:
 | WT_2   | WT        | clone2   |
 | KO_1   | KO        | clone1   |
 | KO_2   | KO        | clone2   |
+| KO_2   | KO        | clone2   |
 ### Scenario 4 – Interaction design
 Used when you want to test whether the effect of one variable (e.g., condition)
 If you want to know whether the KO effect is different in each clone
 `design = ~ subclone + condition + subclone:condition
-| sample    | condition | subclone |
-| --------- | --------- | -------- |
-| WT_sub1_1 | WT        | sub1     |
-| WT_sub1_2 | WT        | sub1     |
-| KO_sub1_1 | KO        | sub1     |
-| KO_sub1_2 | KO        | sub1     |
-| WT_sub2_1 | WT        | sub2     |
-| WT_sub2_2 | WT        | sub2     |
-| KO_sub2_1 | KO        | sub2     |
-| KO_sub2_2 | KO        | sub2     |
+Example colData:
+| sample | condition | subclone |
+| ------ | --------- | -------- |
+| WT_1   | WT        | clone1   |
+| WT_2   | WT        | clone2   |
+| KO_1   | KO        | clone1   |
+| KO_2   | KO        | clone2   |
+| KO_2   | KO        | clone2   |
 
 **Simpler alternative (combined factor)** → Instead of adding an interaction term, you can combine both factors into one variable. 
 group = subcloneCondition
