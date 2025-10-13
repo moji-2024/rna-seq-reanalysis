@@ -107,7 +107,7 @@ Example colData:
 ### Scenario 4 – Interaction design
 Used when you want to test whether the effect of one variable (e.g., condition)
 If you want to know whether the KO effect is different in each clone
-`design = ~ subclone + condition + subclone:condition
+`design = ~ subclone + condition + subclone:condition`
 Example colData:
 | sample | condition | subclone |
 | ------ | --------- | -------- |
