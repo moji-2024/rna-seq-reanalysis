@@ -4,8 +4,11 @@ Abstract:
 Overall design:
 -	mRNA profiles of WT and ING3 KO HT-29 cells were analyzed by bulk RNA-sequencing
 We used one sgRNA to knockout ING3 in HT-29 cells, then we subcloned the HT-29-ING3 KO cells. #1 and #2 mean different subclones of HT-29-ING3 KO cells.
-From the GEO Series entry (GSE166219):
 
+article name:
+-  Inhibitor of growth protein 3 epigenetically silences endogenous retroviral elements and prevents innate immune activation
+
+From the GEO Series entry (GSE166219):
 6 samples listed:
 
 HT-29 WT #1 replicate 1 — GSM5066133 
@@ -26,12 +29,11 @@ BioProject: PRJNA699603
 
 GEO: GSE166219
 
-article name:
--  Inhibitor of growth protein 3 epigenetically silences endogenous retroviral elements and prevents innate immune activation 
 
-PMCID: PMC8682784  PMID: 34791430
 
-BioProject:	PRJNA699603
+PMCID: PMC8682784  
+
+PMID: 34791430
 
 Consent:	public
 
