@@ -44,6 +44,21 @@ dds[['subclone']] = relevel(dds[['subclone']], ref = "WT")
 # 5- Stores Results Internally
 # The dds object now contains all model fits, dispersions, and test statistics — ready for downstream analysis.
 dds <- DESeq(dds)
+# get variance-stabilized transformed (VST) values
+vsd <- vst(dds, blind = FALSE)
+# VST values are:
+
+#       Log-like numbers (similar to log2 counts)
+
+#       Normalized for library size
+
+#       Variance stabilized (low-count genes get adjusted)
+
+#       Continuous values, not integers
+# VST usage:
+#       for PCA, heatmaps, clustering, correlation analysis, not for differential expression testing.
+expr <- assay(vsd)
+write.csv(expr, file =  file.path("$OUT_DIR", "vsd_expression_matrix.csv"))
 # create results
 # 1️⃣ WT vs KO1
 res_KO1 <- results(dds, contrast = c("subclone", "KO1", "WT"))
