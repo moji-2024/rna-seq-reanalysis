@@ -59,6 +59,11 @@ vsd <- vst(dds, blind = FALSE)
 #       for PCA, heatmaps, clustering, correlation analysis, not for differential expression testing.
 expr <- assay(vsd)
 write.csv(expr, file =  file.path("$OUT_DIR", "vsd_expression_matrix.csv"))
+# create normalize counts table by deseq2
+NormalizedTableByDeseq2 = counts(estimateSizeFactors(dds),normalized=T)
+write.csv(as.data.frame(NormalizedTableByDeseq2),
+          file = file.path("$OUT_DIR", "NormalizedTableByDeseq2.csv"),
+          row.names = TRUE)
 # create results
 # 1️⃣ WT vs KO1
 res_KO1 <- results(dds, contrast = c("subclone", "KO1", "WT"))
