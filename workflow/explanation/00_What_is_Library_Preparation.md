@@ -71,12 +71,23 @@ Adapters are **short, known DNA sequences** that are ligated to both ends of eac
   - Make the short RNA/DNA fragments compatible with the sequencing flow cell.  
 
 - **Downside**:  
-  - If not removed, adapter sequences can contaminate reads.  
+  - If not removed, adapter sequences can contaminate reads.
+  - Hard to distinguish between adapters and short inserts (The insert is the actual biological fragment)
+  - Adapter dimers hijack sequencing space
+  - Depth exposes ligation bias
   - This is why tools like **fastp** or **Trimmomatic** are used to detect and trim adapters before alignment.
 
 ---
 
-## 🔹 
+## 🔹 Sequencing Depth and Why It Matters
+Sequencing depth is basically your data budget. If you get 10 million reads, you are doing a light survey. You will detect the big, loud transcripts just fine, but low-abundance genes will hide in the shadows. Quantification works, but subtle expression differences may slip through your fingers.
+When you move up to 25–50 million reads, you enter proper RNA-seq territory. Now you have enough coverage to:
+
+  -  detect low-expression genes with confidence
+  -  estimate transcript abundance with less noise
+  -  make differential expression results more stable
+  -  reduce the chance that rare isoforms go unnoticed
+
 ## 🔹 Role of PCR Amplification (and Why Illumina Needs It)
 
 During library prep, PCR (Polymerase Chain Reaction) is used to **amplify DNA fragments** so that there is enough material for sequencing.
