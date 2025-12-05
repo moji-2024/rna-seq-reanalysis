@@ -42,13 +42,8 @@ cd Tools
 ```
 ####  Install **FastQC**:
 ```bash
-sudo apt update
-sudo apt install openjdk-11-jre
-wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
-unzip fastqc_v0.11.9.zip
-cd FastQC
-chmod +x fastqc
-sudo cp fastqc /usr/local/bin/
+sudo apt-get update
+sudo apt-get install fastqc
 ```
 ####  Install **hisat2**:
 ```bash
