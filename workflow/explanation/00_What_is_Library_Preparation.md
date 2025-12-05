@@ -46,7 +46,7 @@ Before we can analyze RNA-seq data, the raw RNA molecules from cells must be **c
 
 7. **Final Library Ready for Sequencing**  
    - The prepared library is loaded onto the sequencing flow cell, where fragments bind, form clusters, and are read base by base through fluorescent signals.
-   - 
+
 ### Why We Avoid Reads Shorter than 50 bp
 
 During library preparation, fragments that are **too short** are usually removed.  
@@ -76,6 +76,7 @@ Adapters are **short, known DNA sequences** that are ligated to both ends of eac
 
 ---
 
+## 🔹 
 ## 🔹 Role of PCR Amplification (and Why Illumina Needs It)
 
 During library prep, PCR (Polymerase Chain Reaction) is used to **amplify DNA fragments** so that there is enough material for sequencing.
