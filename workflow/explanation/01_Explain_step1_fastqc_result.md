@@ -49,7 +49,7 @@ Below are the main graphs in a FastQC report, what they mean, what is expected i
 - **What it shows**: Proportion of each base (A, T, G, C) at each read position.  
 - **What is expected**:  
   - For random libraries, lines should be roughly parallel.  
-  - For RNA-seq specifically, it’s common to see bias in the first ~10–12 bases due to random hexamer priming during library prep.
+  - For RNA-seq specifically, it’s common to see bias in the first ~10–12 bases due to random hexamer priming prefer certain local motifs(desirable  physical and biochemical features) during library prep.
 - **What is Random Hexamer Priming?**
   -  a molecular biology technique that uses a mixture of short, single-stranded DNA sequences (hexamers) with random nucleotide combinations to initiate DNA synthesis along a template strand.
 - **Why it matters:**
