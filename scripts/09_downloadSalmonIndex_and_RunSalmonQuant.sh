@@ -75,7 +75,7 @@ for fastqFile in "$FASTQ_DIR"/*.fastq.gz; do
         -o "$OUT_DIR/$sample" \
         --validateMappings \
         --gcBias \
-	--seqBias \
+	    --seqBias \
         --useVBOpt
 done
 
