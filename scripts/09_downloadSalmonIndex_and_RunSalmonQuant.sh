@@ -27,7 +27,7 @@ mkdir -p "$OUT_DIR"
 echo "Starting Salmon quantification..."
 
 #-i: specify the location of the index directory; for us it is /n/groups/hbctraining/rna-seq_2023_02/salmon_index/
-#-l A: Format string describing the library. A will automatically infer the most likely library type
+#-l A: Format string describing the library. A will automatically infer the most likely library type. U: (Unstranded library type)Reads could come from either strand. SF: single-end, forward stranded. SR : single-end, reverse stranded
 #-r: sample file
 #-o: output quantification file name
 #--useVBOpt: use variational Bayesian EM algorithm rather than the ‘standard EM’ to optimize abundance estimates (more accurate)
